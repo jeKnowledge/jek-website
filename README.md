@@ -21,4 +21,4 @@ This assumes you already have Node.js installed on your machine.
 
 * **Simão Nogueira** - *Design and Dev* - [simaonogueira101](https://github.com/simaonogueira101)
 * **Teresa Salazar** - *Dev* - [teresalazar13](https://github.com/teresalazar13)
-* **Guilherme Coelho** - *Backlog and structure*
+* **Guilherme Coelho** - *Backlog and structure* - [guipcoelho](https://github.com/guipcoelho)
