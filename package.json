@@ -1,0 +1,25 @@
+{
+  "name": "jek-website",
+  "version": "1.0.0",
+  "description": "jeK's 10th Anniversary Rebrand Website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simaonogueira101/jek-website.git"
+  },
+  "keywords": [
+    "jek"
+  ],
+  "author": "Simão Nogueira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simaonogueira101/jek-website/issues"
+  },
+  "homepage": "https://github.com/simaonogueira101/jek-website#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
