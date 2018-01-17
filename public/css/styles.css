@@ -45,7 +45,7 @@
       padding-right: 42px;
     }
     .c-hero-ov-text {
-      padding-top: 12vw;
+      padding-top: 16vw;
     }
 }
 
@@ -53,11 +53,21 @@
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 90px;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  transition: transform 1s, color 1s;
+  z-index: 101;
+}
+.c-hero-ov-action.still {
+  bottom: 90px;
+}
+.c-hero-ov-action.active {
+  position: fixed;
+  top: 24px;
+  mix-blend-mode: screen;
+  color: var(--light-blue);
 }
 .c-hero-ov-action p {
   text-align: center;
@@ -68,6 +78,9 @@
   animation-delay: 4.5s;
   opacity: 0;
   font-size: 0.9rem;
+}
+.c-hero-ov-action.selected {
+  color: var(--light);
 }
 @keyframes layer4 {
     0% {
@@ -149,10 +162,21 @@
   opacity: 0;
   height: 50px;
   width: 50px;
-  background: var(--light-blue);
-  transition: transform 1s, bottom 1s;
+  background-color: var(--light-blue);
+  transition: transform 1s, bottom 1s, width 0.5s, height 0.5s, background-color 1s;
   mix-blend-mode: normal;
   cursor: pointer;
+  z-index: 101;
+}
+.c-hero-ov-3.active {
+  position: fixed;
+  top: 24px;
+  height: 24px;
+  width: 24px;
+}
+.c-hero-ov-3.selected {
+  background: var(--light);
+  mix-blend-mode: normal;
 }
 @keyframes layer3 {
     0% {
@@ -184,4 +208,22 @@
 }
 .c-contact-text p {
   color: white;
+}
+
+body {
+  height: 300vh;
+}
+
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: width 1s;
+  z-index: 100;
+  background: black;
+}
+.navbar.active {
+  width: 100%;
 }
