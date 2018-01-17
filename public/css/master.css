@@ -1,0 +1,70 @@
+@font-face {
+    font-family: SuisseIntl-Black;
+    src: url(../fonts/SuisseIntl-Black-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-BlackItalic;
+    src: url(../fonts/SuisseIntl-BlackItalic-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntlCond-Bold;
+    src: url(../fonts/SuisseIntlCond-Bold-WebS.woff2);
+}
+@font-face {
+  font-family: SuisseIntlCond-BoldItalic;
+  src: url(../fonts/SuisseIntlCond-BoldItalic-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-Thin;
+    src: url(../fonts/SuisseIntl-Thin-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-ThinItalic;
+    src: url(../fonts/SuisseIntl-ThinItalic-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-Ultralight;
+    src: url(../fonts/SuisseIntl-Ultralight-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-UltralightItalic;
+    src: url(../fonts/SuisseIntl-UltralightItalic-WebS.woff2);
+}
+
+.s-title {
+  font-family: SuisseIntl-Black;
+}
+.s-title-i {
+  font-family: SuisseIntl-BlackItalic;
+}
+
+
+.b-title {
+  font-family: SuisseIntlCond-Bold;
+}
+.b-title-i {
+  font-family: SuisseIntlCond-BoldItalic;
+}
+
+
+.s-text {
+  font-family: SuisseIntl-Thin;
+}
+.s-text-i {
+  font-family: SuisseIntl-ThinItalic;
+}
+
+
+.b-text {
+  font-family: SuisseIntl-Ultralight;
+}
+.b-text-i {
+  font-family: SuisseIntl-UltralightItalic;
+}
+
+* {
+  --dark-blue: #1690C3;
+  --light-blue: #7CCCED;
+  --light: #FAFAFA;
+  --medium: #7C7C7C;
+}

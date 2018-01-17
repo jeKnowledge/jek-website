@@ -1,0 +1,187 @@
+.c-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.c-hero-ov-text {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  padding-top: 6vw;
+}
+.c-hero-ov-text h1 {
+  font-size: 8rem;
+  max-width: 900px;
+  padding-left: 96px;
+  padding-right: 96px;
+  animation-name: layer5;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
+@keyframes layer5 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+.c-hero-ov-text h1 span{
+  color: var(--dark-blue);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.c-hero-ov-text h1 span.active{
+  opacity: 1;
+}
+@media screen and (max-width: 620px) {
+    .c-hero-ov-text h1 {
+      font-size: 18vw;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    .c-hero-ov-text {
+      padding-top: 12vw;
+    }
+}
+
+.c-hero-ov-action {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.c-hero-ov-action p {
+  text-align: center;
+  max-width: 100px;
+  animation-name: layer4;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
+  font-size: 0.9rem;
+}
+@keyframes layer4 {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+.c-hero-ov-1 {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  animation-name: layer1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background: var(--light-blue);
+  mix-blend-mode: screen;
+}
+@keyframes layer1 {
+    0% {
+      width: 0%;
+      left: 0;
+    }
+    50% {
+      width: 100%;
+      left: 0;
+    }
+    100% {
+      width: 0%;
+      left: 100%;
+    }
+}
+
+.c-hero-ov-2 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  animation-name: layer2;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  background: var(--dark-blue);
+  mix-blend-mode: screen;
+  animation-delay: 0.5s;
+}
+@keyframes layer2 {
+    0% {
+      height: 0%;
+      top: 0;
+    }
+    50% {
+      height: 100%;
+      top: 0;
+    }
+    100% {
+      height: 0%;
+      top: 100%;
+    }
+}
+
+.c-c-hero-ov-3 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 24px;
+}
+.c-hero-ov-3 {
+  animation-name: layer3;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  border-radius: 100%;
+  animation-delay: 1.2s;
+  opacity: 0;
+  height: 50px;
+  width: 50px;
+  background: var(--light-blue);
+  transition: transform 1s, bottom 1s;
+  mix-blend-mode: normal;
+  cursor: pointer;
+}
+@keyframes layer3 {
+    0% {
+      opacity: 0;
+      mix-blend-mode: screen;
+    }
+    100% {
+      opacity: 1;
+      mix-blend-mode: screen;
+    }
+}
+.c-hero-ov-3:hover {
+  transform: translateY(-10px);
+}
+
+.c-contact {
+  width: 100%;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  background: var(--light-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-contact-text {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
+}
+.c-contact-text p {
+  color: white;
+}
