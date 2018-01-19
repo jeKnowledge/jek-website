@@ -57,7 +57,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  transition: transform 1s, color 1s;
+  transition: transform 1.5s, color 1s;
   z-index: 101;
 }
 .c-hero-ov-action.still {
@@ -163,7 +163,7 @@
   height: 50px;
   width: 50px;
   background-color: var(--light-blue);
-  transition: transform 1s, bottom 1s, width 0.5s, height 0.5s, background-color 1s;
+  transition: transform 1.5s, bottom 1s, width 1.5s, height 1.5s, background-color 1s;
   mix-blend-mode: normal;
   cursor: pointer;
   z-index: 101;
@@ -200,6 +200,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 46px 2px rgba(0,0,0,0.1);
 }
 .c-contact-text {
   font-size: 5rem;
@@ -208,10 +209,6 @@
 }
 .c-contact-text p {
   color: white;
-}
-
-body {
-  height: 300vh;
 }
 
 .navbar {
@@ -226,4 +223,49 @@ body {
 }
 .navbar.active {
   width: 100%;
+}
+
+.c-portfolio {
+  width: 100vw;
+  height: 90vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-portfolio-slide{
+  display: flex;
+  flex-direction: column;
+  transform: translateZ(0px);
+  position: relative;
+  width: 130vw;
+  top: -54px;
+}
+.c-project-slide{
+  display: flex;
+  white-space: nowrap;
+}
+.c-project-slide-block{
+  width: 50vw;
+  height: 500px;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-project-slide-block .content{
+  align-self: center;
+  width: 80%;
+  height: 80%;
+  background: purple;
+  transition: transform 0.5s;
+}
+.c-project-slide-block h3, .c-project-slide-block h4{
+  position: relative;
+  top: 108px;
+  z-index: 5;
+  color: black;
+}
+.c-project-slide-block .content:hover{
+  transform: scale(1.01, 1.01);
 }
