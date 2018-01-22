@@ -2,11 +2,159 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jeKnowledge</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/bulma/bulma.css">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    Hello World!
-    <br>
-    This is jeK's new website :)r
+    <aside class="navbar">
+
+    </aside>
+    <section class="c-hero">
+      <div class="c-hero-ov-1"></div>
+      <div class="c-hero-ov-2"></div>
+      <div class="c-c-hero-ov-3">
+        <div class="c-hero-ov-3"></div>
+      </div>
+      <div class="c-hero-ov-text">
+        <h1 class="b-title title">
+          We are
+          <br>
+          <span id="we">jeK with an uppercase K.</span>
+        </h1>
+      </div>
+      <div class="c-hero-ov-action still">
+        <p class="b-title" id="action-text"> </p>
+      </div>
+    </section>
+    <section class="c-contact">
+      <div class="c-contact-text">
+        <p class="b-title title is-2" id="contactTitle"> </p>
+        <p class="subtitle s-text is-white is-4"><span id="contactSubtitle"> </span><a id="contactSubtitleLink"> </a></p>
+      </div>
+    </section>
+    <section class="c-portfolio">
+      <div class="c-portfolio-slide">
+        <div class="c-project-slide" onmouseover="slowDown()" onmouseout="slowUp()">
+          <div class="c-project-slide-block">
+            <div class="text">
+              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
+              <br>
+              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
+          <div class="c-project-slide-block">
+            <div class="text">
+              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
+              <br>
+              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
+          <div class="c-project-slide-block">
+            <div class="text">
+              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
+              <br>
+              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
+          <div class="c-project-slide-block">
+            <div class="text">
+              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
+              <br>
+              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
+          <div class="c-project-slide-block">
+            <div class="text">
+              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
+              <br>
+              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-intro c-section">
+      <h1 class="b-title title" id="jekWhoTitle"> </h1>
+      <div class="content">
+        <p class="b-text is-large" id="jekWhoText">
+
+        </p>
+      </div>
+      <div class="content-center">
+        <div class="center">
+          <div class="video-highlight">
+            <h3 class="s-title title is-3 hightlight" id="videosTitle"> </h3>
+            <br>
+            <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle"> </h4>
+          </div>
+          <div class="c-video">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/we8yrJtuKrk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-jeker c-section">
+      <h1 class="b-title title" id="jeKerTitle">jeKer</h1>
+      <h2 class="b-title subtitle is-2" id="jeKerSubtitle">This month's edition!</h2>
+      <div class="content">
+        <p class="b-text is-large" id="jekerDesc">
+
+        </p>
+      </div>
+      <div class="jeker-content">
+        <h4 class="jeker-name s-title title is-3 hightlight" id="jekerName"> </h3>
+      </div>
+    </section>
+    <section class="c-contact">
+      <div class="c-contact-text">
+        <p class="b-title title is-2" id="newsTitle"> </p>
+        <p class="subtitle s-text is-white is-4" id="newsSubtitle"> </p>
+        <div class="field has-addons" style="justify-content: center;">
+          <div class="control">
+            <input class="input" type="text" placeholder="you@email.com">
+          </div>
+          <div class="control">
+            <a class="button is-info" id="newsButton">
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="c-world c-section">
+      <h1 class="b-title title" id="jekWorldTitle"> </h1>
+      <h2 class="b-title subtitle is-2" id="jekWorldSubtitle"> </h2>
+      <div class="content">
+        <p class="b-text is-large" id="jekWorldText">
+          
+        </p>
+      </div>
+    </section>
+
+    <script src="js/global-script.js"></script>
+    <script src="js/hero-script.js"></script>
+    <script src="js/home-transitions.js"></script>
+    <script src="js/smooth-mouse.js"></script>
+    <script src="js/content.js"></script>
+    <script src="js/jeker.js"></script>
+    <script src="js/portfolio-slider.js"></script>
   </body>
 </html>
