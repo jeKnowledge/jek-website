@@ -6,7 +6,7 @@ var weAre = [
   "blue.",
   "informal.",
   "professional.",
-  "more than a company...",
+  "more than an enterprise...",
   "family.",
   "ambitious.",
   "proactive."
@@ -58,6 +58,7 @@ window.onscroll = function() {
     document.querySelector(".c-hero-ov-3").style.opacity = "1";
     actionActive = true;
   }
+  transitions()
 };
 
 function navbar() {
