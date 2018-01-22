@@ -15,7 +15,8 @@ This assumes you already have Node.js installed on your machine.
 ## Built With
 
 * [Node.js](https://nodejs.org/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-* [Express.js](http://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
+* [Express.js](http://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js.
+* [marked](https://github.com/chjj/marked) - A full-featured markdown parser and compiler, written in JavaScript. Built for speed.
 
 ## Authors
 
