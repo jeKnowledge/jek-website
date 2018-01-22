@@ -208,7 +208,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 0px 46px 2px rgba(0,0,0,0.1);
+  /*box-shadow: 0px 0px 46px 2px rgba(0,0,0,0.1);*/
 }
 .c-contact-text {
   font-size: 5rem;
@@ -357,7 +357,10 @@ body {
   margin-top: 48px;
 }
 .jeker-content {
-  background: purple;
+  background: var(--dark-blue);
+  background-size: cover;
+  background-position: center;
+  max-height: 650px;
 }
 @media screen and (max-width: 1190px) {
   .jeker-content {
@@ -389,4 +392,8 @@ body {
     bottom: 48px;
     left: -96px;
   }
+}
+
+.c-world {
+  margin-top: 96px;
 }

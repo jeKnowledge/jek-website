@@ -44,6 +44,7 @@ function homeContentObject() {
     document.querySelector("#newsSubtitle").innerHTML = "Subscreve a nossa newsletter.";
     document.querySelector("#newsButton").innerHTML = "Subscreve";
   }
+
   if(getQueryVariable("lang") == "en" || getQueryVariable("lang") == "") {
     defineLang = 0;
 
@@ -78,6 +79,15 @@ function homeContentObject() {
 
   document.querySelector("#jeKerTitle").innerHTML = jeKerTitle;
   document.querySelector("#jeKerSubtitle").innerHTML = jeKerSubtitle;
+
+  //World
+  var jekWorldTitle = textObject.feed.entry[defineLang + 4].gsx$titles.$t;
+  var jekWorldSubtitle = textObject.feed.entry[defineLang + 4].gsx$subtitles.$t;
+  var jekWorldText = textObject.feed.entry[defineLang + 4].gsx$text.$t;
+
+  document.querySelector("#jekWorldTitle").innerHTML = jekWorldTitle;
+  document.querySelector("#jekWorldSubtitle").innerHTML = jekWorldSubtitle;
+  document.querySelector("#jekWorldText").innerHTML = jekWorldText;
 
   //console.log(jeKerTitle + jeKerSubtitle);
 }

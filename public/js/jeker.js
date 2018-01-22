@@ -20,7 +20,7 @@ jekerContent.send();
 function jekerObject() {
   var originalText = jekerContent.responseText;
   var textObject = JSON.parse(originalText);
-  //console.log(textObject);
+  console.log(textObject);
 
   var defineLang;
 
@@ -32,11 +32,13 @@ function jekerObject() {
   }
 
   //jeK Who
-  var jekerName = textObject.feed.entry[defineLang + 0].gsx$name.$t;
+  var jekerName = textObject.feed.entry[0].gsx$name.$t;
   var jekerDesc = textObject.feed.entry[defineLang + 0].gsx$description.$t;
+  var jekerImage = textObject.feed.entry[0].gsx$imageurl.$t;
 
   document.querySelector("#jekerName").innerHTML = jekerName;
   document.querySelector("#jekerDesc").innerHTML = jekerDesc;
+  document.querySelector(".jeker-content").style.backgroundImage = "url('" + jekerImage + "')";
 
   //console.log(jekerName + jekerDesc);
 }
