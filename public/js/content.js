@@ -1,14 +1,11 @@
-var xmlhttp = new XMLHttpRequest();
+var homeContent = new XMLHttpRequest();
 
-let urlParams = (new URL(document.location)).searchParams;
-let id = urlParams.get("id");
-
-xmlhttp.onreadystatechange = function() {
-  if (xmlhttp.readyState == XMLHttpRequest.DONE) {
-    if (xmlhttp.status == 200) {
-      createObject();
+homeContent.onreadystatechange = function() {
+  if (homeContent.readyState == XMLHttpRequest.DONE) {
+    if (homeContent.status == 200) {
+      homeContentObject();
     }
-    else if (xmlhttp.status == 400) {
+    else if (homeContent.status == 400) {
       console.log('There was an error 400');
     }
     else {
@@ -17,48 +14,30 @@ xmlhttp.onreadystatechange = function() {
   }
 };
 
-xmlhttp.open("GET", 'https://spreadsheets.google.com/feeds/list/1D9pjubKA7-gusevG8mtDeErW8GBNFNVN7ZZA4-TGymU/od6/public/values?alt=json', true);
-xmlhttp.send();
+homeContent.open("GET", 'https://spreadsheets.google.com/feeds/list/1D9pjubKA7-gusevG8mtDeErW8GBNFNVN7ZZA4-TGymU/od6/public/values?alt=json', true);
+homeContent.send();
 
-function createObject() {
-  originalText = xmlhttp.responseText;
+function homeContentObject() {
+  var originalText = homeContent.responseText;
   var textObject = JSON.parse(originalText);
-  console.log(textObject);
+  //console.log(textObject);
+
+  var defineLang;
 
   if(getQueryVariable("lang") == "pt") {
-    console.log("PT");
-
-    //jeK Who
-    var jekWhoTitle = textObject.feed.entry[1].gsx$titles.$t;
-    var jekWhoTtext = textObject.feed.entry[1].gsx$text.$t;
-
-    //jeKer
-    var jeKerTitle = textObject.feed.entry[3].gsx$titles.$t;
-    var jeKerSubtitle = textObject.feed.entry[3].gsx$subtitles.$t;
-    console.log(jeKerTitle + jeKerSubtitle);
+    defineLang = 1;
   }
   if(getQueryVariable("lang") == "en" || getQueryVariable("lang") == "") {
-    console.log("EN");
-
-    //jeK Who
-    var jekWhoTitle = textObject.feed.entry[0].gsx$titles.$t;
-    var jekWhoTtext = textObject.feed.entry[0].gsx$text.$t;
-
-    //jeKer
-    var jeKerTitle = textObject.feed.entry[2].gsx$titles.$t;
-    var jeKerSubtitle = textObject.feed.entry[2].gsx$subtitles.$t;
-    console.log(jeKerTitle + jeKerSubtitle);
+    defineLang = 0;
   }
-}
 
-function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i=0;i<vars.length;i++) {
-  var pair = vars[i].split("=");
-    if(pair[0] == variable) {
-      return pair[1];
-    }
-  }
-  return(false);
+  //jeK Who
+  var jekWhoTitle = textObject.feed.entry[defineLang + 0].gsx$titles.$t;
+  var jekWhoTtext = textObject.feed.entry[defineLang + 0].gsx$text.$t;
+
+  //jeKer
+  var jeKerTitle = textObject.feed.entry[defineLang + 2].gsx$titles.$t;
+  var jeKerSubtitle = textObject.feed.entry[defineLang + 2].gsx$subtitles.$t;
+
+  //console.log(jeKerTitle + jeKerSubtitle);
 }
