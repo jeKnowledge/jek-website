@@ -221,16 +221,16 @@ body {
 
 .navbar {
   height: 100%;
-  width: 0;
+  width: 100vw;
   position: fixed;
-  right: 0;
+  left: 100vw;
   top: 0;
-  transition: width 1s;
+  transition: left 0.8s;
   z-index: 100;
   background: black;
 }
 .navbar.active {
-  width: 100%;
+  left: 0;
 }
 
 .c-portfolio {
@@ -396,4 +396,43 @@ body {
 
 .c-world {
   margin-top: 96px;
+}
+
+.navbar .c-section {
+  position: relative;
+}
+aside .c-section {
+  padding-left: 96px;
+  height: 100%;
+}
+nav {
+  padding-top: 64px;
+}
+nav h1 {
+  color: white;
+  margin-bottom: -64px;
+}
+.navbar-footer {
+  position: absolute;
+  right: 48px;
+  bottom: 48px;
+  text-align: right;
+  color: white;
+  font-size: 14px;
+}
+.navbar-footer img {
+  height: 32px;
+}
+@media screen and (max-width: 620px) {
+  aside .c-section {
+    padding-left: 42px;
+    height: 100%;
+  }
+  nav h1 {
+    margin-bottom: -8vw;
+  }
+  .navbar-footer {
+    right: 24px;
+    bottom: 24px;
+  }
 }
