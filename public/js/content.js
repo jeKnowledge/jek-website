@@ -80,6 +80,15 @@ function homeContentObject() {
   document.querySelector("#jeKerTitle").innerHTML = jeKerTitle;
   document.querySelector("#jeKerSubtitle").innerHTML = jeKerSubtitle;
 
+  //Team
+  var teamTitle = textObject.feed.entry[defineLang + 6].gsx$titles.$t;
+  var teamSubtitle = textObject.feed.entry[defineLang + 6].gsx$subtitles.$t;
+  var teamText = textObject.feed.entry[defineLang + 6].gsx$text.$t;
+
+  document.querySelector("#teamTitle").innerHTML = teamTitle;
+  document.querySelector("#teamSubtitle").innerHTML = teamSubtitle;
+  document.querySelector("#teamText").innerHTML = teamText;
+
   //World
   var jekWorldTitle = textObject.feed.entry[defineLang + 4].gsx$titles.$t;
   var jekWorldSubtitle = textObject.feed.entry[defineLang + 4].gsx$subtitles.$t;
