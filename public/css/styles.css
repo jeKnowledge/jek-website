@@ -236,7 +236,7 @@ body {
   opacity: 0;
   position: relative;
   left: 150px;
-  transition: opacity 0.5s;
+  transition: left 1.5s, opacity 0.5s;
 }
 .navbar.active .c-section nav h1 {
   left: 0;
