@@ -244,6 +244,17 @@ body {
   transition: left 1.5s, opacity 0.5s 0.5s;
 }
 
+.c-my-flooper{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.c-my-flooper__el{
+
+}
+
 .c-portfolio {
   width: 100vw;
   height: 90vh;
@@ -272,12 +283,25 @@ body {
   justify-content: center;
   position: relative;
 }
+@media screen and (max-width: 1050px) {
+    .c-project-slide-block{
+      width: 80vw;
+    }
+}
+@media screen and (max-width: 600px) {
+    .c-project-slide-block{
+      width: 95vw;
+    }
+}
 .c-project-slide-block .content{
   align-self: center;
   width: 80%;
   height: 80%;
-  background: purple;
+  background: var(--dark-blue);
   transition: transform 0.5s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .c-project-slide-block .text{
   position: absolute;
@@ -406,10 +430,15 @@ body {
   .c-section.invert {
     align-items: flex-end;
   }
-  .jeker-name {
+  .jeker-name.regular {
     position: absolute;
     bottom: 48px;
     left: -96px;
+  }
+  .jeker-name.invert {
+    position: absolute;
+    bottom: 48px;
+    right: -96px;
   }
 }
 
