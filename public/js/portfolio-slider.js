@@ -10,7 +10,7 @@ function sliderContentLoader() {
   }
 
   var projectNumber = portfolioContent.feed.entry.length;
-  console.log(projectNumber);
+  //console.log(projectNumber);
 
   for(var i=0; i<projectNumber; i = i+2) {
     var container = document.createElement('div');
