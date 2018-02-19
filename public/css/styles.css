@@ -323,7 +323,7 @@ body {
   display: inline;
   padding-left: 4px;
   padding-right: 4px;
-  color: white;
+  color: white !important;
 }
 
 .c-section {
@@ -444,10 +444,6 @@ body {
 
 .team-image {
   background-image: url("https://scontent.fopo2-2.fna.fbcdn.net/v/t31.0-8/18155813_1648310975183593_6357599524208024818_o.jpg?oh=b4654fd9b196538c6a22cf8aabf6cbd4&oe=5AE0F5CD");
-}
-
-.c-world {
-  margin-top: 96px;
 }
 
 .navbar .c-section {
@@ -577,4 +573,77 @@ footer {
     width: 100%;
     order: 3;
   }
+}
+
+.c-world {
+  margin-top: 96px;
+  min-height: 0px;
+}
+
+.c-partner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 96px;
+}
+.partner {
+  width: calc(100vw / 8);
+  height: calc(100vw / 8);
+  background: orange;
+  border: solid 2px black;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 860px) {
+  .partner {
+    width: calc(100vw / 4);
+    height: calc(100vw / 4);
+  }
+}
+
+.c-testimonial {
+  align-items: center;
+  padding-left: 48px;
+  padding-right: 48px;
+  overflow: hidden;
+}
+@media screen and (max-width: 840px) {
+  .c-testimonial {
+    overflow: auto;
+    overflow-x: scroll;
+  }
+}
+.c-testimonial .content{
+  position: relative;
+  z-index: 1;
+  margin-top: 96px;
+  width: 100vw;
+  max-width: 100vw;
+}
+.c-testimonial .content article{
+  min-width: 500px;
+  white-space: normal;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+@media screen and (max-width: 550px) {
+  .c-testimonial .content article{
+    min-width: 90vw;
+  }
+}
+.c-testimonial .arrow {
+  position: absolute;
+  z-index: 2;
+  top: -48px;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  background: var(--dark-blue);
+}
+.c-testimonial .arrow.left {
+  left: 24px;
+}
+.c-testimonial .arrow.right {
+  right: 24px;
 }
