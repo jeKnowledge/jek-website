@@ -77,6 +77,11 @@ body {
   mix-blend-mode: screen;
   color: var(--light-blue);
 }
+.c-hero-ov-action.safari {
+  color: var(--dark-blue) !important;
+  mix-blend-mode: normal;
+  background: transparent;
+}
 .c-hero-ov-action p {
   text-align: center;
   max-width: 100px;
@@ -184,6 +189,11 @@ body {
 }
 .c-hero-ov-3.selected {
   background: var(--light);
+  mix-blend-mode: normal;
+}
+.c-hero-ov-3.safari {
+  color: var(--dark-blue) !important;
+  background: var(--dark-blue);
   mix-blend-mode: normal;
 }
 @keyframes layer3 {
