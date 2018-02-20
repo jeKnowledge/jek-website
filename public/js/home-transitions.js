@@ -18,4 +18,7 @@ function transitions() {
       jekerTitles[i].style.color = "black";
     }
   }
+  if (window.scrollY > document.querySelector("#testimonial").offsetTop - window.innerHeight/2) {
+    document.querySelector(".c-testimonial .content p").classList.add("active");
+  }
 };
