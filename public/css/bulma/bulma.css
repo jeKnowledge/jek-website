@@ -2672,8 +2672,9 @@ a.box:active {
 }
 
 .content blockquote {
-  background-color: var(--light);
   padding: 1.25em 1.5em;
+  padding-left: 0;
+  margin-bottom: 0 !important;
 }
 
 .content ol {

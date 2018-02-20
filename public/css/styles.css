@@ -354,7 +354,7 @@ body {
 .c-section iframe {
   width: 100%;
 }
-.c-section .content p {
+.c-section .content p, .sized-text {
   font-size: 1.5rem;
 }
 @media screen and (max-width: 620px) {
@@ -362,7 +362,7 @@ body {
       padding-left: 42px;
       padding-right: 42px;
     }
-    .c-section .content p {
+    .c-section .content p, .sized-text {
       font-size: 1.2rem;
     }
 }
@@ -585,7 +585,6 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 96px;
 }
 .partner {
   width: calc(100vw / 8);
@@ -617,6 +616,11 @@ footer {
   }
   .c-testimonial .arrow {
     display: none;
+  }
+}
+@media screen and (min-width: 840px) {
+  .c-testimonial .content p.active{
+    display: none
   }
 }
 .c-testimonial .content{
@@ -659,10 +663,10 @@ footer {
 .c-testimonial .arrow {
   position: absolute;
   z-index: 2;
-  top: -48px;
   cursor: pointer;
   width: 24px;
   height: 24px;
+  top: -24px;
   border-radius: 100%;
   background: var(--dark-blue);
 }
@@ -671,4 +675,25 @@ footer {
 }
 .c-testimonial .arrow.right {
   right: 24px;
+  animation: pulseRight 8s infinite;
+}
+@keyframes pulseRight {
+  0% {
+    right: 24px;
+  }
+  6% {
+    right: 44px;
+  }
+  10% {
+    right: 24px;
+  }
+  14% {
+    right: 39px;
+  }
+  23% {
+    right: 24px;
+  }
+}
+article .hightlight {
+  font-size: 1.5rem !important;
 }
