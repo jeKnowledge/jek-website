@@ -10,7 +10,29 @@
   </head>
   <body>
     <aside class="navbar">
+      <section class="c-section">
+        <nav>
+          <h1 class="b-title">Home</h1>
+          <h1 class="b-title">Portfolio</h1>
+          <h1 class="b-title">Team</h1>
+          <h1 class="b-title">Medium</h1>
+        </nav>
+        <div class="navbar-desc">
 
+        </div>
+        <div class="navbar-footer">
+          <img src="images/logo-text-white.svg" alt="White Logo jeK">
+          <div class="text s-text">
+            geral@jeknowledge.com
+            <br>
+            +351 919 794 638
+            <br>
+            This website is
+            <br>
+            © jeKnowledge 2018.
+          </div>
+        </div>
+      </section>
     </aside>
     <section class="c-hero">
       <div class="c-hero-ov-1"></div>
@@ -37,57 +59,8 @@
     </section>
     <section class="c-portfolio">
       <div class="c-portfolio-slide">
-        <div class="c-project-slide" onmouseover="slowDown()" onmouseout="slowUp()">
-          <div class="c-project-slide-block">
-            <div class="text">
-              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
-              <br>
-              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
-            </div>
-            <div class="content">
+        <div class="c-project-slide c-my-flooper js-flooper" id="portfolio-slider">
 
-            </div>
-          </div>
-          <div class="c-project-slide-block">
-            <div class="text">
-              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
-              <br>
-              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
-            </div>
-            <div class="content">
-
-            </div>
-          </div>
-          <div class="c-project-slide-block">
-            <div class="text">
-              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
-              <br>
-              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
-            </div>
-            <div class="content">
-
-            </div>
-          </div>
-          <div class="c-project-slide-block">
-            <div class="text">
-              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
-              <br>
-              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
-            </div>
-            <div class="content">
-
-            </div>
-          </div>
-          <div class="c-project-slide-block">
-            <div class="text">
-              <h3 class="s-title title is-3 hightlight">This is a pretty cool title</h3>
-              <br>
-              <h4 class="s-text subtitle is-3 hightlight">And this is a nice description.</h4>
-            </div>
-            <div class="content">
-
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -106,12 +79,24 @@
             <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle"> </h4>
           </div>
           <div class="c-video">
-            <iframe width="853" height="480" src="https://www.youtube.com/embed/we8yrJtuKrk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/we8yrJtuKrk" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
       </div>
     </section>
-    <section class="c-jeker c-section">
+    <section class="c-jeker c-section invert">
+      <h1 class="b-title title" id="teamTitle"> </h1>
+      <h2 class="b-title subtitle is-2" id="teamSubtitle"> </h2>
+      <div class="content">
+        <p class="b-text is-large" id="teamText">
+
+        </p>
+      </div>
+      <div class="invert jeker-content team-image">
+        <h4 class="jeker-name s-title title is-3 hightlight invert" id="teamName">The Family</h3>
+      </div>
+    </section>
+    <section class="c-jeker c-section" id="c-jeker">
       <h1 class="b-title title" id="jeKerTitle">jeKer</h1>
       <h2 class="b-title subtitle is-2" id="jeKerSubtitle">This month's edition!</h2>
       <div class="content">
@@ -119,8 +104,8 @@
 
         </p>
       </div>
-      <div class="jeker-content">
-        <h4 class="jeker-name s-title title is-3 hightlight" id="jekerName"> </h3>
+      <div class="regular jeker-content jeker-image">
+        <h4 class="jeker-name s-title title is-3 hightlight regular" id="jekerName"> </h3>
       </div>
     </section>
     <section class="c-contact">
@@ -143,18 +128,127 @@
       <h1 class="b-title title" id="jekWorldTitle"> </h1>
       <h2 class="b-title subtitle is-2" id="jekWorldSubtitle"> </h2>
       <div class="content">
-        <p class="b-text is-large" id="jekWorldText">
-          
-        </p>
+        <p class="b-text is-large" id="jekWorldText"> </p>
+      </div>
+    </section>
+    <div class="c-partner">
+
+    </div>
+    <section class="c-testimonial c-section" id="testimonial">
+      <div class="content">
+        <div class="arrow right"></div>
+        <p class="s-text is-white">Try scrolling right...</p>
+        <div class="c-my-flooper js-flooper2 c-article">
+          <article class="js-flooper-item">
+            <blockquote class="p-testimonial">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </blockquote>
+            <h3 class="s-title title is-3 hightlight">1</h3>
+            <br>
+            <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle">Sobrenome</h4>
+          </article>
+          <article class="js-flooper-item">
+            <blockquote class="p-testimonial">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </blockquote>
+            <h3 class="s-title title is-3 hightlight">2</h3>
+            <br>
+            <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle">Sobrenome</h4>
+          </article>
+          <article class="js-flooper-item">
+            <blockquote class="p-testimonial">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </blockquote>
+            <h3 class="s-title title is-3 hightlight">3</h3>
+            <br>
+            <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle">Sobrenome</h4>
+          </article>
+          <article class="js-flooper-item">
+            <blockquote class="p-testimonial">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </blockquote>
+            <h3 class="s-title title is-3 hightlight">4</h3>
+            <br>
+            <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle">Sobrenome</h4>
+          </article>
+        </div>
       </div>
     </section>
 
+    <footer>
+      <div class="footer-address">
+        <div class="text s-text">
+          jeKnowledge Associação
+          <br>
+          Departamento de Física, B3
+          <br>
+          Rua Larga
+          <br>
+          P-3004-516
+        </div>
+      </div>
+      <div class="footer-middle">
+          <p class="b-title title is-2" id="footerTitle">Still not convinced?</p>
+          <p class="subtitle s-text is-white is-4" id="footerSubtitle">Click this button.</p>
+          <a class="button is-info" id="footerButton">
+            Click Me!
+          </a>
+      </div>
+      <div class="footer-contacts">
+        <img src="images/logo-text-white.svg" alt="White Logo jeK">
+        <div class="text s-text">
+          geral@jeknowledge.com
+          <br>
+          +351 919 794 638
+          <br>
+          This website is
+          <br>
+          © jeKnowledge 2018.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/flooper"></script>
     <script src="js/global-script.js"></script>
     <script src="js/hero-script.js"></script>
     <script src="js/home-transitions.js"></script>
     <script src="js/smooth-mouse.js"></script>
     <script src="js/content.js"></script>
     <script src="js/jeker.js"></script>
+    <script src="js/portfolio-content.js"></script>
     <script src="js/portfolio-slider.js"></script>
+    <script src="js/jek-world.js"></script>
   </body>
 </html>

@@ -21,6 +21,7 @@
   "homepage": "https://github.com/simaonogueira101/jek-website#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "flooper": "^1.0.2",
     "marked": "^0.3.12",
     "serve-favicon": "^2.4.5"
   }

@@ -72,3 +72,7 @@
 ::selection {
   background: var(--medium);
 }
+
+blockquote {
+    position: relative;
+}

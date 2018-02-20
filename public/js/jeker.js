@@ -20,7 +20,7 @@ jekerContent.send();
 function jekerObject() {
   var originalText = jekerContent.responseText;
   var textObject = JSON.parse(originalText);
-  console.log(textObject);
+  //console.log(textObject);
 
   var defineLang;
 
@@ -38,7 +38,7 @@ function jekerObject() {
 
   document.querySelector("#jekerName").innerHTML = jekerName;
   document.querySelector("#jekerDesc").innerHTML = jekerDesc;
-  document.querySelector(".jeker-content").style.backgroundImage = "url('" + jekerImage + "')";
+  document.querySelector(".jeker-image").style.backgroundImage = "url('" + jekerImage + "')";
 
   //console.log(jekerName + jekerDesc);
 }
