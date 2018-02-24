@@ -171,7 +171,7 @@ a:hover {
 
 code {
   background-color: whitesmoke;
-  color: #ff3860;
+  color: var(--dark-blue);
   font-size: 0.875em;
   font-weight: normal;
   padding: 0.25em 0.5em 0.25em;

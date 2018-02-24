@@ -345,6 +345,18 @@ body {
   padding-right: 96px;
   padding-bottom: 96px;
 }
+.c-section.small{
+  min-height: 40vh;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.c-section.centered{
+  align-items: center;
+}
 .c-section h1, .c-section h2{
   max-width: 800px;
 }

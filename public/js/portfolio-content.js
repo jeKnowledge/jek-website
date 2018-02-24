@@ -6,6 +6,8 @@ portfolioContent.onreadystatechange = function() {
       portfolioObject();
       if(location.pathname == "/") {
         sliderContentLoader();
+      } else {
+        projectContentLoader();
       }
     }
     else if (portfolioContent.status == 400) {
