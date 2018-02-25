@@ -5,12 +5,12 @@ if(window.innerWidth > 860) {
  numPartner = 32;
 }
 if(window.innerWidth < 860) {
- numPartner = 16;
+ numPartner = 15;
 }
 
 for(var i=0; i<numPartner; i++) {
   partner.push(document.createElement('div'));
-  partner[i].className = 'partner ' + i;
+  partner[i].className = 'partner partner' + i;
   document.querySelector('.c-partner').appendChild(partner[i]);
 }
 

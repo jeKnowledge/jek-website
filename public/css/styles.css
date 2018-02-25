@@ -631,13 +631,18 @@ footer {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-left: 48px;
+  padding-right: 48px;
+  justify-content: center;
 }
 .partner {
-  width: calc(100vw / 8);
-  height: calc(100vw / 8);
-  background: orange;
-  border: solid 2px black;
-  box-sizing: border-box;
+  width: calc((100vw - 96px) / 8);
+  height: calc((100vw - 96px) / 8);
+  background: var(--light);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 32px solid var(--light);
 }
 @media screen and (max-width: 860px) {
   .partner {
