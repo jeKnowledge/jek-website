@@ -15,7 +15,7 @@ function projectContentLoader() {
   var thisProject = portfolioContent.feed.entry[projectNumber]
   var thisProjectPT = portfolioContent.feed.entry[projectNumber + defineLang]
 
-  console.log(thisProject)
+  //console.log(thisProject)
 
   document.querySelector("#author").innerHTML = thisProject.gsx$author.$t;
   document.querySelector("#date").innerHTML = thisProject.gsx$date.$t;
@@ -26,11 +26,11 @@ function projectContentLoader() {
   var converter = new showdown.Converter();
   var text = thisProject.gsx$text.$t;
   var textTOhtml = converter.makeHtml(text);
-  console.log(textTOhtml);
+  //console.log(textTOhtml);
   document.querySelector("#text").innerHTML = textTOhtml;
 
   if(thisProject.gsx$image.$t !== "") {
-    console.log(thisProject.gsx$image.$t);
+    //console.log(thisProject.gsx$image.$t);
     document.querySelector("#project-image").style.backgroundImage = "url(" + thisProject.gsx$image.$t + ")";
   }
 
