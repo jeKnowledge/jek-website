@@ -98,5 +98,14 @@ function homeContentObject() {
   document.querySelector("#jekWorldSubtitle").innerHTML = jekWorldSubtitle;
   document.querySelector("#jekWorldText").innerHTML = jekWorldText;
 
+  //What we do
+  var workTitle = textObject.feed.entry[defineLang + 8].gsx$titles.$t;
+  var workSubtitle = textObject.feed.entry[defineLang + 8].gsx$subtitles.$t;
+  var workText = textObject.feed.entry[defineLang + 8].gsx$text.$t;
+
+  document.querySelector("#workTitle").innerHTML = workTitle;
+  document.querySelector("#workSubtitle").innerHTML = workSubtitle;
+  document.querySelector("#workText").innerHTML = workText;
+
   //console.log(jeKerTitle + jeKerSubtitle);
 }

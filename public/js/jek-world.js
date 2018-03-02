@@ -5,7 +5,7 @@ if(window.innerWidth > 860) {
  numPartner = 32;
 }
 if(window.innerWidth < 860) {
- numPartner = 15;
+ numPartner = 14;
 }
 
 for(var i=0; i<numPartner; i++) {

@@ -29,5 +29,5 @@ navLinks[2].addEventListener('click', function() {
   window.location = currentAddress + "/views/team/";
 }, false);
 navLinks[3].addEventListener('click', function() {
-  window.location = currentAddress + "/";
+  window.location = "https://medium.com/jeknowledge";
 }, false);

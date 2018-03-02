@@ -1,0 +1,86 @@
+body {
+  background: var(--light);
+  border: 12px solid white;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.c-c-hero-ov-3 {
+  pointer-events: none;
+}
+.c-hero-ov-3 {
+  pointer-events: all;
+}
+
+.c-c-hello {
+  min-height: calc(100vh - 24px);
+  flex-direction: row;
+  padding: 24px;
+  display: none;
+}
+.c-c-hello.active {
+  display: flex;
+}
+
+.c-hello {
+  width: calc(100% / 3);
+  padding-top: 42px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.c-middle {
+  justify-content: center;
+}
+.c-middle p {
+  color: var(--medium);
+}
+
+.c-hello h1 {
+  font-size: 500%;
+}
+.c-hello h2 {
+  font-size: 200%;
+  max-width: 300px;
+}
+.c-hello h1, .c-hello h2 {
+  color: var(--dark-blue)
+}
+
+.hello-footer-img {
+  height: 32px;
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
+}
+
+.c-options {
+  width: 30vw;
+  height: calc(30vw / 4);
+  display: flex;
+  flex-direction: row;
+}
+.c-options .option {
+  height: 100%;
+  width: calc((100% / 4));
+  background: white;
+  border: 1px solid #F2F2F2;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.c-options .option:hover {
+  border: 1px solid var(--dark-blue);
+}
+.c-options .option:first-child {
+  margin-right: 12px;
+}
+.c-options .option:last-child {
+  margin-left: 12px;
+}
+.c-options .option:nth-child(2) {
+  margin-right: 6px;
+}
+.c-options .option:nth-child(3) {
+  margin-left: 6px;
+}

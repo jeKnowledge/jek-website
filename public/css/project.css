@@ -26,14 +26,12 @@
 }
 .project-content h2 {
   font-size: 150%;
-  font-family: SuisseIntl-Light;
-  font-weight: bold;
+  font-family: SuisseIntl-Black;
   margin-bottom: 6px;
 }
 .project-content h3 {
   font-size: 70%;
-  font-family: SuisseIntl-Light;
-  font-weight: bold;
+  font-family: SuisseIntl-Black;
   margin-bottom: 6px;
   text-transform: uppercase;
 }
