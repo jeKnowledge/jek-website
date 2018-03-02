@@ -92,6 +92,9 @@ body {
   opacity: 0;
   font-size: 0.9rem;
 }
+#action-text {
+  cursor: pointer;
+}
 .c-hero-ov-action.selected {
   color: var(--light);
 }

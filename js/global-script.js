@@ -31,3 +31,8 @@ navLinks[2].addEventListener('click', function() {
 navLinks[3].addEventListener('click', function() {
   window.location = "https://medium.com/jeknowledge";
 }, false);
+
+
+document.querySelector('#action-text').addEventListener('click', function() {
+  window.location = "/";
+}, false);
