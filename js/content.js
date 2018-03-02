@@ -63,7 +63,6 @@ function homeContentObject() {
     //News
     document.querySelector("#newsTitle").innerHTML = "Like what you see?";
     document.querySelector("#newsSubtitle").innerHTML = "Subscribe to our newsletter.";
-    document.querySelector("#newsButton").innerHTML = "Subscribe";
   }
 
   //jeK Who

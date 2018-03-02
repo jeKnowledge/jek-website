@@ -30,6 +30,27 @@ body {
   padding-left: 12px;
   padding-right: 12px;
 }
+@media screen and (max-width: 890px) {
+  body {
+    min-height: 100vh;
+  }
+  .c-hello {
+    width: 100%;
+    max-width: 500px;
+  }
+  .c-c-hello {
+    min-height: 0;
+    flex-direction: column;
+    padding: 24px;
+    display: none;
+  }
+  .hello-footer-img {
+    height: 32px;
+    position: absolute;
+    left: 28px;
+    bottom: 24px;
+  }
+}
 .c-middle {
   justify-content: center;
 }
@@ -72,6 +93,10 @@ body {
 .c-options .option:hover {
   border: 1px solid var(--dark-blue);
 }
+.c-options .option.active {
+  border: 1px solid var(--dark-blue);
+  background: var(--dark);
+}
 .c-options .option:first-child {
   margin-right: 12px;
 }
@@ -83,4 +108,14 @@ body {
 }
 .c-options .option:nth-child(3) {
   margin-left: 6px;
+}
+
+.option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6px;
+  box-sizing: border-box;
+  color: var(--dark-blue);
 }

@@ -16,15 +16,40 @@ document.querySelector('#hello-button-1').addEventListener("click", function(){
   }
 });
 
+var options = document.querySelectorAll('.option');
+
+options[0].addEventListener("click", function() {
+  project = "Tech, Web & Apps";
+  options[0].classList.add("active");
+  options[1].classList.remove("active");
+  options[2].classList.remove("active");
+  options[3].classList.remove("active");
+});
+options[1].addEventListener("click", function() {
+  project = "Design or Branding";
+  options[1].classList.add("active");
+  options[0].classList.remove("active");
+  options[2].classList.remove("active");
+  options[3].classList.remove("active");
+});
+options[2].addEventListener("click", function() {
+  project = "Marketing or Events";
+  options[2].classList.add("active");
+  options[0].classList.remove("active");
+  options[1].classList.remove("active");
+  options[3].classList.remove("active");
+});
+options[3].addEventListener("click", function() {
+  project = "Something else...";
+  options[3].classList.add("active");
+  options[1].classList.remove("active");
+  options[2].classList.remove("active");
+  options[0].classList.remove("active");
+});
+
 document.querySelector('#hello-button-2').addEventListener("click", function(){
-  var radio = document.querySelectorAll('input[type="radio"]');
-  for (var i = 0, length = radio.length; i < length; i++) {
-    if (radio[i].checked) {
-      project = radio[i].value;
-      break;
-    }
-  }
   console.log(project)
+
   document.querySelector('#hello-2').classList.toggle("active");
   document.querySelector('#hello-3').classList.toggle("active");
 });
