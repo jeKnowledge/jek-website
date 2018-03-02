@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="/css/master.css">
     <link rel="stylesheet" href="/css/bulma/bulma.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <aside class="navbar">
@@ -46,16 +48,15 @@
         <p class="b-title" id="action-text"> </p>
       </div>
     </section>
-    <section class="c-section top-section">
-      <h1 class="b-title title">Portfolio</h1>
-      <h2 class="b-title subtitle is-2" id="jeKerSubtitle">The coolest projects are right below.</h2>
-      <div class="content">
-        <p class="b-text is-large">
-          A collection of the best of jeK's work, curated by the team over the years.
-        </p>
-      </div>
-    </section>
-    <section class="c-section c-portfolio" id="c-portfolio">
+    <header class="c-head-project c-section small">
+      <h3 class="b-title is-size-6" id="author"> </h3>
+      <h4 class="b-text is-size-6" id="position"> </h4>
+      <h1 class="title is-2 b-title title" id="title"> </h1>
+      <h2 class="subtitle is-3 b-text" id="short-desc"> </h2>
+      <h4 class="b-text is-size-6" id="date"> </h4>
+    </header>
+    <section class="c-project-hero" id="project-image"></section>
+    <section class="c-section small project-content" id="text">
 
     </section>
     <footer>
@@ -92,7 +93,8 @@
     </footer>
     <script src="/js/global-script.js"></script>
     <script src="/js/article-script.js"></script>
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.6/dist/showdown.min.js"></script>
+    <script src="/js/portfolio-project.js"></script>
     <script src="/js/portfolio-content.js"></script>
-    <script src="/js/portfolio-all.js"></script>
   </body>
 </html>
