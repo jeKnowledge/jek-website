@@ -26,7 +26,7 @@ navLinks[1].addEventListener('click', function() {
   window.location = currentAddress + "/jek-website/views/portfolio/";
 }, false);
 navLinks[2].addEventListener('click', function() {
-  window.location = currentAddress + "/jek-website/views/team/";
+  window.location = currentAddress + "/jek-website/recrutamento";
 }, false);
 navLinks[3].addEventListener('click', function() {
   window.location = "https://medium.com/jeknowledge";
