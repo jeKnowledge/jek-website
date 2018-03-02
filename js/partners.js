@@ -48,5 +48,5 @@ function shuffle(a) {
 shuffle(partners)
 
 for(var i=0; i<partnerContainer.length; i++) {
-  document.querySelector(".partner" + i).style.backgroundImage = "url(../images/partners/" + partners[i] + ".png)";
+  document.querySelector(".partner" + i).style.backgroundImage = "url(images/partners/" + partners[i] + ".png)";
 }
