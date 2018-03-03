@@ -3,10 +3,10 @@ var portfolioContent = new XMLHttpRequest();
 portfolioContent.onreadystatechange = function() {
   if (portfolioContent.readyState == XMLHttpRequest.DONE) {
     if (portfolioContent.status == 200) {
-      portfolioObject();
-      if(location.pathname == "/") {
+        portfolioObject();
+      if(location.pathname == "/jek-website/") {
         sliderContentLoader();
-      } else if(location.pathname == "/views/portfolio/"){
+      } else if(location.pathname == "/jek-website/views/portfolio/"){
         portfolioAll()
       } else {
         projectContentLoader();

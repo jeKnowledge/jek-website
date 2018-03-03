@@ -20,10 +20,10 @@ var navLinks = document.querySelectorAll("nav h1");
 var currentAddress = window.location.origin;
 
 navLinks[0].addEventListener('click', function() {
-  window.location = currentAddress + "/";
+  window.location = currentAddress + "/jek-website/";
 }, false);
 navLinks[1].addEventListener('click', function() {
-  window.location = currentAddress + "/views/portfolio/";
+  window.location = currentAddress + "/jek-website/views/portfolio/";
 }, false);
 navLinks[2].addEventListener('click', function() {
   window.location = currentAddress + "/recrutamento/";

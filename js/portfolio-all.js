@@ -23,7 +23,7 @@ function portfolioAll() {
 
     var content = document.createElement('div');
     var currentAddress = window.location.origin;
-    container.href = currentAddress + "/views/project/?num=" + i;
+    container.href = currentAddress + "/jek-website/views/project/?num=" + i;
     content.className = 'content';
     content.style.backgroundImage = "url('" + portfolioContent.feed.entry[i].gsx$image.$t + "')";
 
