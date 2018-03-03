@@ -4,9 +4,9 @@ portfolioContent.onreadystatechange = function() {
   if (portfolioContent.readyState == XMLHttpRequest.DONE) {
     if (portfolioContent.status == 200) {
         portfolioObject();
-      if(location.pathname == "/jek-website/") {
+      if(location.pathname == "/") {
         sliderContentLoader();
-      } else if(location.pathname == "/jek-website/views/portfolio/"){
+      } else if(location.pathname == "/views/portfolio/"){
         portfolioAll()
       } else {
         projectContentLoader();
