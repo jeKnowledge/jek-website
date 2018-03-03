@@ -694,7 +694,7 @@ footer {
   }
 }
 @media screen and (min-width: 840px) {
-  .c-testimonial .content p.active{
+  .c-testimonial .content p{
     display: none
   }
 }
