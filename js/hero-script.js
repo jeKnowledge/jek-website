@@ -58,7 +58,6 @@ window.onscroll = function() {
     document.querySelector(".c-hero-ov-3").style.opacity = "1";
     actionActive = true;
   }
-  transitions()
 };
 
 function navbar() {
