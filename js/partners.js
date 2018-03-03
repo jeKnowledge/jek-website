@@ -26,7 +26,7 @@ var partners = [
   "redlight",
   "reidosfrangos",
   "rightit",
-  "startuplisboa",
+  "google",
   "subvisual",
   "unbabel",
   "whitesmith",

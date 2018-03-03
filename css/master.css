@@ -69,10 +69,6 @@
   --medium: #7C7C7C;
 }
 
-::selection {
-  background: var(--medium);
-}
-
 blockquote {
   position: relative;
 }
