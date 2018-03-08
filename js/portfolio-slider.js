@@ -22,7 +22,7 @@ function sliderContentLoader() {
     subtitle.innerHTML = portfolioContent.feed.entry[i].gsx$shortsubtitles.$t;
 
     var content = document.createElement('a');
-    content.href = window.location.href + "views/project/?num=" + i;
+    content.href = "views/project/?num=" + i;
     content.className = 'content';
     content.style.backgroundImage = "url('" + portfolioContent.feed.entry[i].gsx$image.$t + "')";
 
