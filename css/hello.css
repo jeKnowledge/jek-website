@@ -119,3 +119,7 @@ body {
   box-sizing: border-box;
   color: var(--dark-blue);
 }
+
+.invisible {
+  display: none;
+}
