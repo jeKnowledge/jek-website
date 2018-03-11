@@ -1,5 +1,4 @@
 <?php
-
   $type = $_POST["hidden"];
   $name =  $_POST["name"];
   $email = $_POST["email"];
@@ -8,6 +7,6 @@
 
   $message = $name . ' contacted you for ' . $type . "." . ' Their email is ' . $email;
 
-  mail("simao.nogueira66@gmail.com", $subject, $message, "jeK's Website Contact Form:");
+  //mail("simao.nogueira66@gmail.com", $subject, $message, "jeK's Website Contact Form:");
   header('Location: /');
 ?>
