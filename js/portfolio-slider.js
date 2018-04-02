@@ -4,7 +4,7 @@ function sliderContentLoader() {
   var projectNumber = portfolioContent.feed.entry.length;
   //console.log(projectNumber);
 
-  for(var i=1; i<projectNumber; i++) {
+  for(var i=projectNumber - 1; i>projectNumber - 5; i--) {
     var container = document.createElement('div');
     container.className = 'c-project-slide-block c-my-flooper__el js-flooper-item';
 

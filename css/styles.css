@@ -55,6 +55,9 @@ body {
     .c-hero-ov-text {
       padding-top: 16vw;
     }
+    .c-testimonial .content p{
+      padding-left: 42px !important;
+    }
 }
 
 .c-hero-ov-action {
@@ -692,10 +695,15 @@ footer {
   .c-testimonial .arrow {
     display: none;
   }
+  .c-testimonial .content p{
+    font-size: 12px;
+    color: var(--dark);
+    padding-left: 96px;
+  }
 }
 @media screen and (min-width: 840px) {
   .c-testimonial .content p{
-    display: none
+    display: none;
   }
 }
 .c-testimonial .content{
@@ -708,7 +716,6 @@ footer {
 .c-testimonial .content p{
   font-size: 12px;
   color: var(--dark);
-  padding-left: 42px;
 }
 @keyframes fadeIn {
   0% {
