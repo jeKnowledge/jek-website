@@ -1,12 +1,16 @@
 <?php
-  $type = $_POST["hidden"];
-  $name =  $_POST["name"];
-  $email = $_POST["email"];
+$type = $_POST["hidden"];
+$name =  $_POST["name"];
+$email = $_POST["email"];
 
-  $subject = 'New Contact from ' . $name;
+$subject = 'New Contact from ' . $name;
 
-  $message = $name . ' contacted you for ' . $type . "." . ' Their email is ' . $email;
+$message = $name . ' contacted you for ' . $type . "." . ' Their email is ' . $email;
 
-  //mail("simao.nogueira66@gmail.com", $subject, $message, "jeK's Website Contact Form:");
-  header('Location: /');
+$headers = "From: myplace@example.com\r\n";
+
+if(isset($_POST['url']) && $_POST['url'] == ''){
+  mail("tiagomartins282@gmail.com", $subject, $message, "jeK's Website Contact Form:", $headers);
+}
+header('Location: /');
 ?>
