@@ -300,7 +300,6 @@ header.masthead .post-heading .meta a {
 
 .post-preview > a > .post-title {
   font-size: 30px;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -461,4 +460,34 @@ footer .copyright {
   transform: scale(1.05);
   color: white;
   text-decoration: none;
+}
+
+.company-logo {
+  height: 200px;
+  max-width: 200px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.digital {
+  background-image: url("../img/digital.png");
+}
+.hyp {
+  background-image: url("../img/hyp.png");
+}
+.nest {
+  background-image: url("../img/nest.png");
+}
+.outsystems {
+  background-image: url("../img/outsystems.png");
+}
+.ubiwhere {
+  background-image: url("../img/ubiwhere.png");
+}
+.unbabel {
+  background-image: url("../img/unbabel.png");
+}
+.whitesmith {
+  background-image: url("../img/whitesmith.png");
 }
