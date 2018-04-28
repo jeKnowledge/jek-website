@@ -188,18 +188,37 @@ section {
 .color-blue {
   background-color: #1690C3;
 }
+.color-light-blue {
+  background-color: #7CCCED;
+}
 .color-white {
   background-color: #ffffff;
 }
 .color-green {
-  background-color: #5ABA65;
+  background-color: #376546;
+}
+.color-light-green {
+  background-color: #51A450;
 }
 .color-orange {
-  background-color: #D66C24;
+  background-color: #E3713B;
+}
+.color-light-orange {
+  background-color: #EBA863;
 }
 .color-pink {
-  background-color: #ED4271;
+  background-color: #AB334A;
+}
+.color-light-pink {
+  background-color: #F05B78;
 }
 .color-black {
-  background-color: #333333;
+  background-color: #3E3C39;
+}
+.color-light-black {
+  background-color: #AEADAA;
+}
+
+.dark {
+  background-color: hsl(0, 0%, 80%);
 }

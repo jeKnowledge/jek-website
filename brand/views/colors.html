@@ -18,8 +18,20 @@
         document.execCommand("Copy");
         alert("Copied the color: " + copyText.value);
       }
+      function copy11() {
+        var copyText = document.getElementById("input11");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the color: " + copyText.value);
+      }
       function copy2() {
         var copyText = document.getElementById("input2");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the color: " + copyText.value);
+      }
+      function copy21() {
+        var copyText = document.getElementById("input21");
         copyText.select();
         document.execCommand("Copy");
         alert("Copied the color: " + copyText.value);
@@ -30,8 +42,20 @@
         document.execCommand("Copy");
         alert("Copied the color: " + copyText.value);
       }
+      function copy31() {
+        var copyText = document.getElementById("input31");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the color: " + copyText.value);
+      }
       function copy4() {
         var copyText = document.getElementById("input4");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the color: " + copyText.value);
+      }
+      function copy41() {
+        var copyText = document.getElementById("input41");
         copyText.select();
         document.execCommand("Copy");
         alert("Copied the color: " + copyText.value);
@@ -44,6 +68,12 @@
       }
       function copy6() {
         var copyText = document.getElementById("input6");
+        copyText.select();
+        document.execCommand("Copy");
+        alert("Copied the color: " + copyText.value);
+      }
+      function copy61() {
+        var copyText = document.getElementById("input61");
         copyText.select();
         document.execCommand("Copy");
         alert("Copied the color: " + copyText.value);
@@ -131,26 +161,58 @@
                 </a>
               </div>
               <div class="download-each download-rect">
+                <div class="download-image color-light-blue">
+                  <input class="color-field" type="text" value="#7CCCED" id="input11">
+                </div>
+                <a onclick="copy11()" class="download-text title is-6">
+                  Copy
+                </a>
+              </div>
+              <div class="download-each download-rect">
                 <div class="download-image color-green">
-                  <input class="color-field" type="text" value="#5ABA65" id="input2">
+                  <input class="color-field" type="text" value="#376546" id="input2">
                 </div>
                 <a onclick="copy2()" class="download-text title is-6">
                   Copy
                 </a>
               </div>
               <div class="download-each download-rect">
+                <div class="download-image color-light-green">
+                  <input class="color-field" type="text" value="#51A450" id="input21">
+                </div>
+                <a onclick="copy21()" class="download-text title is-6">
+                  Copy
+                </a>
+              </div>
+              <div class="download-each download-rect">
                 <div class="download-image color-orange">
-                  <input class="color-field" type="text" value="#D66C24" id="input3">
+                  <input class="color-field" type="text" value="#E3713B" id="input3">
                 </div>
                 <a onclick="copy3()" class="download-text title is-6">
                   Copy
                 </a>
               </div>
               <div class="download-each download-rect">
+                <div class="download-image color-light-orange">
+                  <input class="color-field" type="text" value="#EBA863" id="input31">
+                </div>
+                <a onclick="copy31()" class="download-text title is-6">
+                  Copy
+                </a>
+              </div>
+              <div class="download-each download-rect">
                 <div class="download-image color-pink">
-                  <input class="color-field" type="text" value="#ED4271" id="input4">
+                  <input class="color-field" type="text" value="#AB334A" id="input4">
                 </div>
                 <a onclick="copy4()" class="download-text title is-6">
+                  Copy
+                </a>
+              </div>
+              <div class="download-each download-rect">
+                <div class="download-image color-light-pink">
+                  <input class="color-field" type="text" value="#F05B78" id="input41">
+                </div>
+                <a onclick="copy41()" class="download-text title is-6">
                   Copy
                 </a>
               </div>
@@ -164,9 +226,17 @@
               </div>
               <div class="download-each download-rect">
                 <div class="download-image color-black">
-                  <input class="color-field" type="text" value="#333333" id="input6">
+                  <input class="color-field" type="text" value="#3E3C39" id="input6">
                 </div>
                 <a onclick="copy6()" class="download-text title is-6">
+                  Copy
+                </a>
+              </div>
+              <div class="download-each download-rect">
+                <div class="download-image color-light-black">
+                  <input class="color-field" type="text" value="#AEADAA" id="input61">
+                </div>
+                <a onclick="copy61()" class="download-text title is-6">
                   Copy
                 </a>
               </div>
