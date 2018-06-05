@@ -4,16 +4,30 @@ var project = "";
 var when = "";
 
 document.querySelector('#hello-button-1').addEventListener("click", function(){
-  if(document.querySelector('#hello-name').value !== "") {
-    name = document.querySelector('#hello-name').value;
-    email = document.querySelector('#hello-email').value;
+  var http = new XMLHttpRequest();
+  var url = "validate.php"
+  var vars = "grecaptcha="+grecaptcha.getResponse();
+  http.open("POST", url, true);
+  http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+  http.onreadystatechange = () => {
+    if(http.readyState == 4 && http.status == 200){
+      if(http.responseText == "true"){
+        if(document.querySelector('#hello-name').value !== "") {
+          name = document.querySelector('#hello-name').value;
+          email = document.querySelector('#hello-email').value;
+        }
+        document.querySelector('#hello-1').classList.toggle("active");
+        document.querySelector('#hello-2').classList.toggle("active");
+        var firstName = name.split(" ");
+        if(name !== "") {
+          document.querySelector('#user-name').innerHTML = firstName[0] + "...";
+        }
+      }
+    }
   }
-  document.querySelector('#hello-1').classList.toggle("active");
-  document.querySelector('#hello-2').classList.toggle("active");
-  var firstName = name.split(" ");
-  if(name !== "") {
-    document.querySelector('#user-name').innerHTML = firstName[0] + "...";
-  }
+
+  http.send(vars);
 });
 
 var options = document.querySelectorAll('.option');
