@@ -7,9 +7,9 @@ $subject = 'New Contact from ' . $name;
 
 $message = $name . ' contacted you for ' . $type . "." . ' Their email is ' . $email;
 
-$headers = "From: myplace@example.com\r\n";
+$headers = "From: website@jeknowledge.com\r\n";
 
-mail("tiagomartins282@gmail.com", $subject, $message, "jeK's Website Contact Form:", $headers);
+mail("simao.nogueira@jeknowledge.com", $subject, $message, "jeK's Website Contact Form:", $headers);
 
 header('Location: /');
 ?>
