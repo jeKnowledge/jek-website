@@ -16,10 +16,6 @@
   src: url(../../../fonts/SuisseIntlCond-BoldItalic-WebS.woff2);
 }
 @font-face {
-    font-family: SuisseIntl-Thin;
-    src: url(../../../fonts/SuisseIntl-Thin-WebS.woff2);
-}
-@font-face {
     font-family: SuisseIntl-ThinItalic;
     src: url(../../../fonts/SuisseIntl-ThinItalic-WebS.woff2);
 }
@@ -30,6 +26,10 @@
 @font-face {
     font-family: SuisseIntl-UltralightItalic;
     src: url(../../../fonts/SuisseIntl-UltralightItalic-WebS.woff2);
+}
+@font-face {
+    font-family: SuisseIntl-Thin;
+    src: url(../../../fonts/SuisseIntl-Thin-WebS.woff2);
 }
 
 html{
