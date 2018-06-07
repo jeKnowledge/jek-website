@@ -94,7 +94,7 @@ ul,ol{
 	line-height: 45px;
 	letter-spacing: 0.1rem;
 }
-.section-titile-bg {
+.section-title-bg {
     display: inline;
     font-size: 115px;
     font-weight: 700;
@@ -148,6 +148,50 @@ ul,ol{
     margin-left: -45px;
 }
 .section-title:after{
+  margin-left: -30px;
+}
+.section-note-header{
+  p{
+    text: center;
+    font-weight: 250;
+    line-height: 26px;
+    padding-bottom: 36px;
+  }
+}
+.section-note{
+  font-size: 50px;
+  color: #fff;
+  line-height: 52px;
+  padding-bottom: 20px;
+  font-weight: 250;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 15px;
+  &:before{
+    position: absolute;
+    content: '';
+    left: 15px;
+    bottom: 8px;
+    width: 48px;
+    height: 1px;
+    background-color: $preset;
+  }
+}
+.section-note:after{
+  position: absolute;
+  content: '';
+  left: 0px;
+  bottom: 2px;
+  width: 48px;
+  height: 1px;
+  background-color: $preset;
+}
+.section-note:before,.section-note:after {
+    left: 50%;
+    margin-left: -45px;
+}
+.section-note:after{
   margin-left: -30px;
 }
 .section-subcontent{
