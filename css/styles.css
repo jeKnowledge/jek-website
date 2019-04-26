@@ -650,8 +650,8 @@ footer {
   justify-content: center;
 }
 .partner {
-  width: calc((100vw - 96px) / 8);
-  height: calc((100vw - 96px) / 8);
+  width: calc((100vw - 96px) / 9);
+  height: calc((100vw - 96px) / 9);
   background: var(--light);
   background-position: center;
   background-repeat: no-repeat;

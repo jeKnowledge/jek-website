@@ -2,7 +2,7 @@ var partner = [];
 var numPartner = 0;
 
 if(window.innerWidth > 860) {
- numPartner = 32;
+ numPartner = 36;
 }
 if(window.innerWidth < 860) {
  numPartner = 14;

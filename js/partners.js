@@ -1,4 +1,5 @@
 var partners = [
+  "10digital",
   "accenture",
   "betai",
   "bloco",
@@ -15,6 +16,7 @@ var partners = [
   "fctuc",
   "feedzai",
   "github",
+  "ipdj",
   "ipn",
   "itgrow",
   "landingjobs",
@@ -22,6 +24,7 @@ var partners = [
   "lifeonmars",
   "microsoft",
   "novabase",
+  "paulaprada",
   "redbull",
   "redlight",
   "reidosfrangos",
@@ -29,6 +32,7 @@ var partners = [
   "google",
   "subvisual",
   "unbabel",
+  "tisystems",
   "whitesmith",
   "wit"
 ];
