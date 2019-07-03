@@ -1,6 +1,7 @@
 var partners = [
   "10digital",
   "accenture",
+  "baseipam",
   "betai",
   "bloco",
   "boldint",
