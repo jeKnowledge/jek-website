@@ -1,0 +1,145 @@
+/**
+ * RESET
+ * Reference: http://meyerweb.com/eric/tools/css/reset/
+ */
+/**
+ * BASIC TYPE
+ */
+img, video {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/**
+ * CLEAR FLOATS
+ * Reference: http://w3bits.com/clearfix
+ */
+.cf:after,
+.lab-grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * CONTENT WRAPPER
+ */
+.wrapper {
+  float: right;
+  margin-top: 40px;
+  margin-right: 80px;
+  margin-left: 80px;
+  max-width: 1080px;
+}
+
+.brick {
+  position: relative;
+  text-align: center;
+}
+
+.brick .controls {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.masonry .brick a {
+  display: none;
+}
+
+/**
+* MEDIA SETTINGS
+*/
+@media only screen and (min-width: 1024px) {
+  .w-full--d {
+    width: 100%;
+  }
+
+  .w-three-quarters--d {
+    width: 75%;
+  }
+
+  .w-two-thirds--d {
+    width: 66.66666%;
+  }
+
+  .w-half--d {
+    width: 50%;
+  }
+
+  .w-third--d {
+    width: 33.33333%;
+  }
+
+  .w-quarter--d {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .w-full--t {
+    width: 100%;
+  }
+
+  .w-three-quarters--t {
+    width: 75%;
+  }
+
+  .w-two-thirds--t {
+    width: 66.66666%;
+  }
+
+  .w-half--t {
+    width: 50%;
+  }
+
+  .w-third--t {
+    width: 33.33333%;
+  }
+
+  .w-quarter--t {
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .lab-share {
+    text-align: right;
+  }
+
+  .w-full--m {
+    width: 100%;
+  }
+
+  .w-three-quarters--m {
+    width: 75%;
+  }
+
+  .w-two-thirds--m {
+    width: 66.66666%;
+  }
+
+  .w-half--m {
+    width: 50%;
+  }
+
+  .w-third--m {
+    width: 33.33333%;
+  }
+
+  .w-quarter--m {
+    width: 25%;
+  }
+}

@@ -1,0 +1,103 @@
+nav a {
+  color:#666363;
+}
+/*----------------------SOLUTIONS------------------------*/
+
+#clothing , #environment , #games , #health , #transports , #supplies{
+  height: 1300px;
+}
+.solutions_title {
+  padding-top: 100px;
+  padding-left: 80px;
+}
+#clothing .solutions_title {
+  padding-top: 100px;
+}
+.solutions_title h1 {
+  position: absolute;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 95px;
+  margin-top: -30px;
+  color: rgba(0, 0, 0, 0.06);
+}
+
+.solutions_title h3::after {
+  display: block;
+  content: '';
+  width: 8%;
+  height: 4px;
+  background: #FFCF26;
+}
+
+.solutions_title h3 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 87px;
+}
+
+@media screen and (max-width: 600px) {
+  .solutions_title h1 {
+    font-size: 32px;
+  }
+
+  .solutions_title h3 {
+    font-size: 20px;
+  }
+}
+
+
+
+/*-----------------------FOOTER------------------------*/
+footer {
+  height: 320px;
+}
+
+footer h3 {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 54px;
+  text-transform: uppercase;
+}
+
+footer .footer_info {
+  padding-top: 40px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.footer_info h1 {
+  color: rgba(0, 0, 0, 0.7);
+  text-align: left;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.footer_info p {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer_sep::after {
+  text-align: center;
+  margin: auto;
+  display: block;
+  content: '';
+  width: 80%;
+  height: 1px;
+  background: #8E8484;
+  margin-top: 40px;
+}
+
+.footer_social {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer_social a {
+  margin-left: 10px;
+}

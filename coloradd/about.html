@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/labs.css">
+  <link rel="stylesheet" href="css/masonry.css">
+  <link rel="stylesheet" href="css/hamburguer.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/tab.js"></script>
+  <script src="js/accordion."></script>
+  <title>About.</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="logo_colorAdd"></a>
+      </div>
+      <div class="options">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <button id="myBtn">Contact Us</button>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="hamburguer">
+    <input id="menu-hamburguer" type="checkbox">
+    <label for="menu-hamburguer">
+      <div class="menu-select">
+        <span class="hamburguer"></span>
+      </div>
+    </label>
+    <div class="menu">
+      <ul>
+        <a href="about.html">
+          <li>About</li>
+        </a>
+        <a href="code.html">
+          <li>Code</li>
+        </a>
+        <a href="solutions.html">
+          <li>Solutions</li>
+        </a>
+        <a href="#">
+          <li>FAQ</li>
+        </a>
+        <a href="#">
+          <li>Contact Us</li>
+        </a>
+      </ul>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/hamburguer.js"></script>
+  </section>
+
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">&times;</span>
+        <h2>Contact Form</h2>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="pt1">
+            <select name="option">
+              <option value="" disabled selected>Type of contact</option>
+              <option value="1">Company/Enterprise</option>
+              <option value="2">Municipality</option>
+              <option value="3">School/College</option>
+              <option value="4">Hospital</option>
+              <option value="5">Individual</option>
+              <option value="6">Other</option>
+            </select>
+          </div>
+
+          <div class="pt2">
+
+            <div class="name">
+              <div class="input_title">
+                <label>Contact name</label>
+              </div>
+              <div class="input_text">
+                <input type="text">
+              </div>
+            </div>
+            <div class="mail">
+              <div class="input_title">
+                <label>Contact e-mail</label>
+              </div>
+              <div class="input_text">
+                <input type="email">
+              </div>
+            </div>
+          </div>
+
+          <div class="pt3">
+            <select name="option">
+              <option value="" disabled selected>Subject matter</option>
+              <option value="1">Licensing</option>
+              <option value="2">Employment</option>
+              <option value="3">ColorADD Social</option>
+              <option value="4">Founds/Donations</option>
+              <option value="5">Other subject</option>
+            </select>
+          </div>
+
+          <div class="pt4">
+            <input type="text" value="Text message">
+          </div>
+
+          <div class="pt5">
+            <input type="submit" name="" value="Submit">
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <header id="about_header">
+    <div class="about_title">
+      <h1>WHO WE ARE</h1>
+      <h3>ABOUT</h3>
+    </div>
+  </header>
+
+
+  <section id="question_tab">
+
+    <div class="tab">
+      <button class="tablinks" onclick="about(event, 'why')">WHY</button>
+      <button class="tablinks" onclick="about(event, 'how')">HOW</button>
+      <button class="tablinks" onclick="about(event, 'what')">WHAT</button>
+    </div>
+
+    <div id="why" class="tabcontent">
+      <h3>Why we do what we do.</h3>
+      <p>We seek to help build a world where companies, municipalities, and the whole society come together and bring color to every person. Even to the color blind.</p>
+    </div>
+
+    <div id="how" class="tabcontent">
+      <h3>How we do it.</h3>
+      <p>We partner with companies and municipalities, making their products, services and communication more efficient, responsible and inclusive.</p>
+    </div>
+
+    <div id="what" class="tabcontent">
+      <h3>What we actually do.</h3>
+      <p>We seek to facilitate color identification for color blind people.</p>
+    </div>
+
+
+    <div class="quests_mobile">
+
+      <div class="quest">
+        <h3>Why we do what we do.</h3>
+        <p>We seek to help build a world where companies, municipalities, and the whole society come together and bring color to every person. Even to the color blind.</p>
+      </div>
+      <div class="quest">
+        <h3>How we do it.</h3>
+        <p>We partner with companies and municipalities, making their products, services and communication more efficient, responsible and inclusive.</p>
+      </div>
+      <div class="quest">
+        <h3>What we actually do.</h3>
+        <p>We seek to facilitate color identification for color blind people.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="story">
+
+
+    <div class="story_container">
+      <div class="story_text">
+        <h1>HOW WE BORN</h1>
+        <h3>OUR STORY</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div class="story_img">
+        <img src="img/india.jpg">
+      </div>
+    </div>
+
+    <div class="info_accordion">
+
+      <button class="accordion">Founded in 2010</button>
+      <div class="panel">
+        <p>Eight years was the time needed for Miguel Neiva to transform his masters thesis into an ethically responsible business: to create a code that allows color blind people to identify colors.</p>
+        <p>And so 2010, ColorADD was born - now an exemple to follow amongst ethically responsible businesses.</p>
+      </div>
+
+      <button class="accordion">+300 Partners</button>
+      <div class="panel">
+        <p>Our business model is based in a co-creation system with companies and municipalities.</p>
+        <p>Today, thanks to this system, there are several brands and entities using the ColorADD code to improve the lives of their users. In total, there are currently more than 300 partnerships worldwide.</p>
+      </div>
+
+      <button class="accordion">National & International Recognition</button>
+      <div class="panel">
+        <p>Miguel Neiva, author of the Code, was named as the first Portuguese "Fellow of Ashoka", integrated in the program "Making more Health", by "Boehringer Ingelheim", in 2013. <a href="https://www.ashoka.org/en-US/fellow/miguel-neiva"
+            target="_blank"> See more.</a></p>
+        <p>First prize of the “Vodafone Foundation Mobile for Good Europe Awards 2013”, in the Accessibility Category. <a
+            href="https://www.vodafone.pt/en/press-releases/2013/12/portuguese-coloradd-app-wins-international-vodafone-foundation-award.html" target="_blank">See more.</a></p>
+        <p>First certified B Corp in Portugal, by meeting rigorous standards of social and environmental performance, accountability, and transparency.</p>
+        <p>ColorADD APP has been awarded as Best World APPs in 2014, in the category Inclusion & Empowerment by United Nations - UN (World Summit Awards). <a href="https://www.worldsummitawards.org/winner/coloradd/" target="_blank">See more.</a></p>
+        <p>Selected as one of 54 Innovative Practices by Zero Projects, in 2014. <a href="https://zeroproject.org/practice/colour-identification-system-for-the-colourblind/" target="_blank">See more.</a></p>
+        <p>Gold Medal - 50th Anniversary of the Universal Declaration of Human Rights, awarded by the Mayor of Porto City to Miguel Neiva, Master of Design, Communication and Marketing.</p>
+        <p>Finalist in the Chivas - The Venture, 2016 global competition, that aims to find innovative projects that promote positive social or environmental change in society. <a href="https://www.chivas.com/the-venture/alumni/2016/coloradd"
+            target="_blank">See more.</a></p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section id="social">
+    <div class="social_title">
+      <h1>SOCIAL</h1>
+      <h3>COLORADD</h3>
+    </div>
+    <figure id="container" onclick="fullScreen(this)">
+      <figure id="slideshow">
+        <img src="img/soc2.jpg">
+        <img src="img/soc3.jpg">
+        <img src="img/soc4.jpg">
+        <img src="img/soc5.jpg">
+        <img src="img/soc6.jpg">
+        <img src="img/soc7.jpg">
+        <img src="img/soc8.jpg">
+        <img src="img/soc1.jpg">
+      </figure>
+    </figure>
+
+    <div class="social_text">
+      <h2>ColorADD.Social is a non-profit association dedicated to <br> promote social integration of the colorblind people.</h2>
+      <p>Born in 2012, it's main concern is to raise awareness to the colorblindness issue, especially near the school community, training and contributing to an Inclusive School, by promoting the early screening of colorblindness in childhood, and
+        granting color accessibility in Libraries and School Classes through the adoption of the ColorADD code.</p>
+    </div>
+
+
+    <script type="text/javascript">
+      function cancelFullScreen() {
+        if (document.cancelFullScreen) {
+          document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen();
+        } else if (document.msCancelFullScreen) {
+          document.msCancelFullScreen();
+        }
+        link = document.getElementById("container");
+        link.removeAttribute("onclick");
+        link.setAttribute("onclick", "fullScreen(this)");
+      }
+
+      function fullScreen(element) {
+        if (element.requestFullScreen) {
+          element.requestFullScreen();
+        } else if (element.webkitRequestFullScreen) {
+          element.webkitRequestFullScreen();
+        } else if (element.mozRequestFullScreen) {
+          element.mozRequestFullScreen();
+        }
+        link = document.getElementById("container");
+        link.removeAttribute("onclick");
+        link.setAttribute("onclick", "cancelFullScreen()");
+      }
+
+      window.onload = function() {
+        imgs = document.getElementById('slideshow').children;
+        interval = 8000;
+        currentPic = 0;
+        imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
+        imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
+        var infiniteLoop = setInterval(function() {
+          imgs[currentPic].removeAttribute('style');
+          if (currentPic == imgs.length - 1) {
+            currentPic = 0;
+          } else {
+            currentPic++;
+          }
+          imgs[currentPic].style.webkitAnimation = 'fadey ' + interval + 'ms';
+          imgs[currentPic].style.animation = 'fadey ' + interval + 'ms';
+        }, interval);
+      }
+    </script>
+
+    <section id="team">
+
+      <div class="team_text">
+        <h1>MEET US</h1>
+        <h3>OUR TEAM</h3>
+      </div>
+
+      <div class="team_container">
+
+        <div class="member">
+          <img src="img/member1.jpg">
+          <div class="member_description">
+            <h1>Founder</h1>
+            <h3>Miguel Neiva</h3>
+          </div>
+        </div>
+        <div class="member">
+          <img src="img/member1.jpg">
+          <div class="member_description">
+            <h1>Founder</h1>
+            <h3>Miguel Neiva</h3>
+          </div>
+        </div>
+        <div class="member">
+          <img src="img/member1.jpg">
+          <div class="member_description">
+            <h1>Founder</h1>
+            <h3>Miguel Neiva</h3>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <footer>
+
+      <div class="footer_info">
+
+        <div class="footer_about">
+          <h1>About</h1>
+          <p>Solutions</p>
+          <p>The Code</p>
+          <p>ColorADD Social</p>
+        </div>
+        <div class="footer_office">
+          <h1>Office</h1>
+          <p>Rua de Miguel Bombarda, 93</p>
+          <p>4050-381 Porto, Portugal</p>
+        </div>
+        <div class="footer_contact">
+          <h1>Contact</h1>
+          <p>+351 917 526 446</p>
+          <p>+351 229 372 053</p>
+          <p>info@coloradd.net</p>
+        </div>
+      </div>
+      <div class="footer_sep"> </div>
+
+      <div class="footer_social">
+        <a href="https://www.facebook.com/ColorADDoficial/" target="_blank"><img src="img/fb.png" width="3%"></a>
+        <a href="https://www.linkedin.com/company/coloradd/" target="_blank"><img src="img/lkin.png" width="3%"></a>
+        <a href="https://twitter.com/coloraddoficial" target="_blank"><img src="img/tt.png" width="3%"></a>
+        <a href="https://www.instagram.com/coloradd_oficial/" target="_blank"><img src="img/insta.png" width="3%"></a>
+      </div>
+
+    </footer>
+
+</html>
