@@ -34,6 +34,7 @@ var partners = [
   "subvisual",
   "unbabel",
   "tisystems",
+  "talkdesk",
   "whitesmith",
   "wit"
 ];
