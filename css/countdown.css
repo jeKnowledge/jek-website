@@ -1,0 +1,22 @@
+.countdown {
+  margin: 2rem auto;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 0.105rem;
+  margin-top: 0px;
+}
+.countdown_letters {
+  font-size: .7rem;
+  color: var(--dark-blue);
+}
+.countdown_numbers {
+  font-size: 1rem;
+  color: var(--dark-blue);
+}
+td {
+  padding:0 .5rem .5rem .5rem;
+}
+
+table td {
+  text-align: center;
+}
