@@ -119,9 +119,13 @@
   width: fit-content;
 }
 
+.s-title.is-3, .subtitle.is-3 {
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 1155px) {
   .s-title.is-3, .subtitle.is-3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -158,20 +162,20 @@
 
 @media screen and (max-width: 912px) {
   .s-title.is-3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 
   .subtitle.is-3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
 
 @media screen and (max-width: 598px) {
   .s-title.is-3 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .subtitle.is-3 {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }
