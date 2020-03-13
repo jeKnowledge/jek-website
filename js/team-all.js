@@ -1,10 +1,10 @@
 function teamAll() {
   teamContent = window.teamContent;
 
-  var allJekers= 47;
-  var innovationJekers= 17;
-  var techJekers= 20;
-  var internJekers= 10;
+  var allJekers= 42;
+  var innovationJekers= 15;
+  var techJekers= 22;
+  var internJekers= 5;
 
   for(var i=0; i<allJekers; i++) {
     var text = document.createElement('div');
