@@ -27,7 +27,7 @@ function teamAll() {
     jeker.appendChild(subtext);
 
     var teamImage = teamContent.feed.entry[i].gsx$imagem_4.$t;
-    jeker.style.backgroundImage = "url(../../images/team/" + teamImage + ".jpg)";
+    jeker.style.backgroundImage = "url('" + teamImage + "')";
 
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
@@ -54,7 +54,7 @@ function teamAll() {
     jeker.appendChild(subtext);
 
     var teamImage = teamContent.feed.entry[i].gsx$imagem.$t;
-    jeker.style.backgroundImage = "url(../../images/team/" + teamImage + ".jpg)";
+    jeker.style.backgroundImage = "url('" + teamImage + "')";
 
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
@@ -81,7 +81,7 @@ function teamAll() {
     jeker.appendChild(subtext);
 
     var teamImage = teamContent.feed.entry[i].gsx$imagem_2.$t;
-    jeker.style.backgroundImage = "url(../../images/team/" + teamImage + ".jpg)";
+    jeker.style.backgroundImage = "url('" + teamImage + "')";
 
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
@@ -108,7 +108,7 @@ function teamAll() {
     jeker.appendChild(subtext);
 
     var teamImage = teamContent.feed.entry[i].gsx$imagem_3.$t;
-    jeker.style.backgroundImage = "url(../../images/team/" + teamImage + ".jpg)";
+    jeker.style.backgroundImage = "url('" + teamImage + "')";
 
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
