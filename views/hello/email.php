@@ -9,7 +9,7 @@ $message = $name . ' contacted you for ' . $type . "." . ' Their email is ' . $e
 
 $headers = "From: website@jeknowledge.com\r\n";
 
-mail("miguel.vasconcelos@jeknowledge.com", $subject, $message, "jeK's Website Contact Form:", $headers);
+mail("geral@jeknowledge.com", $subject, $message, "jeK's Website Contact Form:", $headers);
 
 header('Location: /');
 ?>
