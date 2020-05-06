@@ -17,7 +17,7 @@ teamContent.onreadystatechange = function() {
   }
 };
 
-teamContent.open("GET", 'https://spreadsheets.google.com/feeds/list/1uZymfau4VeVE0UeHeEYF73EUlPGOJx_Z-sOFnKaxvwU/od6/public/values?alt=json', true);
+teamContent.open("GET", 'https://spreadsheets.google.com/feeds/list/1Nh90AUr9M7MQfOAGtnphnrQYjNV72QJ_cQEGnDEw22o/od6/public/values?alt=json', true);
 teamContent.send();
 
 function teamObject() {

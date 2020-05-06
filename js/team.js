@@ -46,26 +46,21 @@ innovationDepartment.addEventListener('click', function() {
   internDepartment.style.color="#000000";
 
   var jeker=document.querySelectorAll(".allJekers" );
-  console.log(jeker)
   for(var i=0; i<jeker.length; i++) {
-    console.log(jeker[i])
     jeker[i].style.display="none";
   }
 
   var jeker=document.querySelectorAll(".techJekers" );
-  console.log(jeker)
   for(var i=0; i<jeker.length; i++) {
     jeker[i].style.display="none";
   }
 
   var jeker=document.querySelectorAll(".innovationJekers" );
-  console.log(jeker)
   for(var i=0; i<jeker.length; i++) {
     jeker[i].style.display="flex";
   }
 
   var jeker=document.querySelectorAll(".internJekers");
-  console.log(jeker)
   for(var i=0; i<jeker.length; i++) {
     jeker[i].style.display="none";
   }

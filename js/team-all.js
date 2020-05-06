@@ -1,10 +1,7 @@
 function teamAll() {
   teamContent = window.teamContent;
 
-  var allJekers= 42;
-  var innovationJekers= 15;
-  var techJekers= 22;
-  var internJekers= 5;
+  var allJekers = teamContent.feed.entry.length;
 
   for(var i=0; i<allJekers; i++) {
     var text = document.createElement('div');
@@ -12,43 +9,16 @@ function teamAll() {
 
     var text = document.createElement('div');
     text.className = "s-title title is-3 jekerTextALL jekerText";
-    text.innerHTML = teamContent.feed.entry[i].gsx$nome_4.$t;
-
-    subtext = document.createElement('div');
-    subtext.className = "s-text subtitle is-3 jekerTextALL jekerText";
-    var teamPosition = teamContent.feed.entry[i].gsx$cargo_4.$t;
-    var teamCourse = teamContent.feed.entry[i].gsx$curso_4.$t;
-    subtext.innerHTML = teamPosition+'<br />'+teamCourse;
-
-    var jeker = document.createElement('div');
-    jeker.className = 'allJekers jekers';
-
-    jeker.appendChild(text);
-    jeker.appendChild(subtext);
-
-    var teamImage = teamContent.feed.entry[i].gsx$imagem_4.$t;
-    jeker.style.backgroundImage = "url('" + teamImage + "')";
-
-    document.querySelector('.c-jekers').appendChild(jeker);
-    jeker.style.display="none";
-  }
-
-  for(var i=0; i<innovationJekers; i++) {
-    var text = document.createElement('div');
-    text.className = 'jekerTextINNOVATION';
-
-    var text = document.createElement('div');
-    text.className = "s-title title is-3 jekerTextINNOVATION jekerText";
     text.innerHTML = teamContent.feed.entry[i].gsx$nome.$t;
 
     subtext = document.createElement('div');
-    subtext.className = "s-text subtitle is-3 jekerTextINNOVATION jekerText";
+    subtext.className = "s-text subtitle is-3 jekerTextALL jekerText";
     var teamPosition = teamContent.feed.entry[i].gsx$cargo.$t;
     var teamCourse = teamContent.feed.entry[i].gsx$curso.$t;
     subtext.innerHTML = teamPosition+'<br />'+teamCourse;
 
     var jeker = document.createElement('div');
-    jeker.className = 'innovationJekers jekers';
+    jeker.className = 'allJekers jekers';
 
     jeker.appendChild(text);
     jeker.appendChild(subtext);
@@ -58,59 +28,77 @@ function teamAll() {
 
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
-  }
 
-  for(var i=0; i<techJekers; i++) {
-    var text = document.createElement('div');
-    text.className = 'jekerTextTECH';
+    if(teamPosition.localeCompare("CTO")==0 || teamPosition.localeCompare("Senior Designer")==0 || teamPosition.localeCompare("Junior Designer")==0 || teamPosition.localeCompare("Senior Developer")==0 || teamPosition.localeCompare("Junior Developer")==0){
+      var text = document.createElement('div');
+      text.className = 'jekerTextTECH';
 
-    var text = document.createElement('div');
-    text.className = "s-title title is-3 jekerTextTECH jekerText";
-    text.innerHTML = teamContent.feed.entry[i].gsx$nome_2.$t;
+      var text = document.createElement('div');
+      text.className = "s-title title is-3 jekerTextTECH jekerText";
+      text.innerHTML = teamContent.feed.entry[i].gsx$nome.$t;
 
-    subtext = document.createElement('div');
-    subtext.className = "s-text subtitle is-3 jekerTextTECH jekerText";
-    var teamPosition = teamContent.feed.entry[i].gsx$cargo_2.$t;
-    var teamCourse = teamContent.feed.entry[i].gsx$curso_2.$t;
-    subtext.innerHTML = teamPosition+'<br />'+teamCourse;
+      subtext = document.createElement('div');
+      subtext.className = "s-text subtitle is-3 jekerTextTECH jekerText";
+      subtext.innerHTML = teamPosition+'<br />'+teamCourse;
 
-    var jeker = document.createElement('div');
-    jeker.className = 'techJekers jekers';
+      var jeker = document.createElement('div');
+      jeker.className = 'techJekers jekers';
 
-    jeker.appendChild(text);
-    jeker.appendChild(subtext);
+      jeker.appendChild(text);
+      jeker.appendChild(subtext);
 
-    var teamImage = teamContent.feed.entry[i].gsx$imagem_2.$t;
-    jeker.style.backgroundImage = "url('" + teamImage + "')";
+      jeker.style.backgroundImage = "url('" + teamImage + "')";
 
-    document.querySelector('.c-jekers').appendChild(jeker);
-    jeker.style.display="none";
-  }
+      document.querySelector('.c-jekers').appendChild(jeker);
+      jeker.style.display="none";
+    }
 
-  for(var i=0; i<internJekers; i++) {
-    var text = document.createElement('div');
-    text.className = 'jekerTextINTERN';
+    if(teamPosition.localeCompare("CEO & CIO")==0 || teamPosition.localeCompare("Senior Innovation Consultant & Communication Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant")==0 || teamPosition.localeCompare("Junior Innovation Consultant")==0){
+      var text = document.createElement('div');
+      text.className = 'jekerTextINNOVATION';
 
-    var text = document.createElement('div');
-    text.className = "s-title title is-3 jekerTextINTERN jekerText";
-    text.innerHTML = teamContent.feed.entry[i].gsx$nome_3.$t;
+      var text = document.createElement('div');
+      text.className = "s-title title is-3 jekerTextINNOVATION jekerText";
+      text.innerHTML = teamContent.feed.entry[i].gsx$nome.$t;
 
-    subtext = document.createElement('div');
-    subtext.className = "s-text subtitle is-3 jekerTextINTERN jekerText";
-    var teamPosition = teamContent.feed.entry[i].gsx$cargo_3.$t;
-    var teamCourse = teamContent.feed.entry[i].gsx$curso_3.$t;
-    subtext.innerHTML = teamPosition+'<br />'+teamCourse;
+      subtext = document.createElement('div');
+      subtext.className = "s-text subtitle is-3 jekerTextINNOVATION jekerText";
+      subtext.innerHTML = teamPosition+'<br />'+teamCourse;
 
-    var jeker = document.createElement('div');
-    jeker.className = 'internJekers jekers';
+      var jeker = document.createElement('div');
+      jeker.className = 'innovationJekers jekers';
 
-    jeker.appendChild(text);
-    jeker.appendChild(subtext);
+      jeker.appendChild(text);
+      jeker.appendChild(subtext);
 
-    var teamImage = teamContent.feed.entry[i].gsx$imagem_3.$t;
-    jeker.style.backgroundImage = "url('" + teamImage + "')";
+      jeker.style.backgroundImage = "url('" + teamImage + "')";
 
-    document.querySelector('.c-jekers').appendChild(jeker);
-    jeker.style.display="none";
+      document.querySelector('.c-jekers').appendChild(jeker);
+      jeker.style.display="none";
+    }
+
+    if(teamPosition.localeCompare("COO")==0 || teamPosition.localeCompare("Treasurer")==0 || teamPosition.localeCompare("Senior HR Manager")==0 || teamPosition.localeCompare("Junior HR Manager")==0){
+      var text = document.createElement('div');
+      text.className = 'jekerTextINTERN';
+
+      var text = document.createElement('div');
+      text.className = "s-title title is-3 jekerTextINTERN jekerText";
+      text.innerHTML = teamContent.feed.entry[i].gsx$nome.$t;
+
+      subtext = document.createElement('div');
+      subtext.className = "s-text subtitle is-3 jekerTextINTERN jekerText";
+      subtext.innerHTML = teamPosition+'<br />'+teamCourse;
+
+      var jeker = document.createElement('div');
+      jeker.className = 'internJekers jekers';
+
+      jeker.appendChild(text);
+      jeker.appendChild(subtext);
+
+      jeker.style.backgroundImage = "url('" + teamImage + "')";
+
+      document.querySelector('.c-jekers').appendChild(jeker);
+      jeker.style.display="none";
+    }
   }
 }
