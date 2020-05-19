@@ -12,6 +12,7 @@ function getQueryVariable(variable) {
 
 if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
   document.querySelector('.c-hero-ov-3').classList.add("safari");
+  document.querySelector('.c-hero-ov-4').classList.add("safari");
   document.querySelector('.c-hero-ov-action').classList.add("safari");
 }
 

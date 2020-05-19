@@ -2,7 +2,6 @@ function sliderContentLoader() {
   portfolioContent = window.portfolioContent;
 
   var projectNumber = portfolioContent.feed.entry.length;
-  //console.log(projectNumber);
 
   for(var i=projectNumber - 1; i>projectNumber - 5; i--) {
     var container = document.createElement('div');
