@@ -53,7 +53,7 @@ function teamAll() {
       jeker.style.display="none";
     }
 
-    if(teamPosition.localeCompare("CEO & CIO")==0 || teamPosition.localeCompare("Senior Innovation Consultant & Communication Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant")==0 || teamPosition.localeCompare("Junior Innovation Consultant")==0){
+    if(teamPosition.localeCompare("CEO & CIO")==0 || teamPosition.localeCompare("Senior Innovation Consultant & Communication Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant & International Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant")==0 || teamPosition.localeCompare("Junior Innovation Consultant")==0){
       var text = document.createElement('div');
       text.className = 'jekerTextINNOVATION';
 
