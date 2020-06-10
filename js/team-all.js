@@ -77,7 +77,7 @@ function teamAll() {
       jeker.style.display="none";
     }
 
-    if(teamPosition.localeCompare("COO")==0 || teamPosition.localeCompare("Treasurer")==0 || teamPosition.localeCompare("Senior HR Manager")==0 || teamPosition.localeCompare("Junior HR Manager")==0){
+    if(teamPosition.localeCompare("COO")==0 || teamPosition.localeCompare("Treasurer")==0 || teamPosition.localeCompare("Senior HR Manager")==0 || teamPosition.localeCompare("Junior HR Manager")==0 || teamPosition.localeCompare("Junior QM Manager")==0 || teamPosition.localeCompare("Junior HR & QM Manager")==0){
       var text = document.createElement('div');
       text.className = 'jekerTextINTERN';
 
