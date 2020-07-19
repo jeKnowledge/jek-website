@@ -202,7 +202,7 @@ body {
 	mix-blend-mode: normal;
 }
 .c-hero-ov-3.safari {
-	animation-name: none;
+	animation-name: layer3;
 	color: var(--dark-blue) !important;
 	background: var(--dark-blue);
 	mix-blend-mode: normal;

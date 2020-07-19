@@ -1,5 +1,7 @@
 document.querySelector(".c-hero-ov-action").classList.add("active");
-document.querySelector(".c-hero-ov-3").style.mixBlendMode = "screen";
+if ( !(/^((?!chrome|android).)*safari/i.test(navigator.userAgent))){
+  document.querySelector(".c-hero-ov-3").style.mixBlendMode = "screen";
+}
 document.querySelector(".c-hero-ov-3").classList.add("active");
 document.querySelector(".c-hero-ov-4").classList.add("active");
 document.querySelector(".c-hero-ov-action").classList.remove("still");
