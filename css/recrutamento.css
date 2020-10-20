@@ -27,3 +27,9 @@
 	color: var(--dark-blue);
 	font-size: 160%;
 }
+
+@media screen and (max-width: 890px) {
+	.hide-section-mobile{
+		display: none;
+	}
+}

@@ -87,21 +87,21 @@
       </div>
     </section>
     <section class="c-section c-c-hello active" id="first-section">
-      <div class="c-hello c-left" style="justify-content: space-between">
-        <div>
-          <h1 class="title b-title">Hi!</h1>
-          <h2 class="subtitle b-title">Looking for your next big thing?</h2>
+        <div class="hide-section-mobile c-hello c-left" style="justify-content: space-between">
+          <div>
+            <h1 class="title b-title">Hi!</h1>
+            <h2 class="subtitle b-title">Looking for your next big thing?</h2>
+          </div>
+          <button
+            class="subtitle b-title recrutamentoButton"
+            onclick="smoothScroll(document.getElementById('second-section'))"
+          >
+            Click Here To Apply
+          </button>
         </div>
-        <button
-          class="subtitle b-title recrutamentoButton"
-          onclick="smoothScroll(document.getElementById('second-section'))"
-        >
-          Click Here To Apply
-        </button>
-      </div>
-      <div class="container">
-        <iframe class="responsive-iframe" src="./iframe/index.html"></iframe>
-      </div>
+        <div class="hide-section-mobile container">
+          <iframe class="responsive-iframe" src="./iframe/index.html"></iframe>
+        </div>
     </section>
     <section class="c-section c-c-hello active" id="second-section">
       <div class="c-hello c-left" style="justify-content: space-between">
@@ -109,7 +109,7 @@
           If you are here, don't forget to apply!
         </h2>
         <button
-          class="subtitle b-title recrutamentoButton"
+          class="hide-section-mobile subtitle b-title recrutamentoButton"
           onclick="smoothScroll(document.getElementById('first-section'))"
         >
           Go To Candidate's Guide
