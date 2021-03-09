@@ -1,3 +1,7 @@
+body {
+	background: none;
+}
+
 .container {
 	position: relative;
 	overflow: hidden;
