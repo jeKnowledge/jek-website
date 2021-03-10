@@ -7,8 +7,8 @@
   padding-bottom: 60px;
 }
 
-.logo{
-    width: 50px;
+.logo {
+  width: 50px;
   -webkit-animation:spin 5s linear infinite;
   -moz-animation:spin 5s linear infinite;
   animation:spin 5s linear infinite;
@@ -33,11 +33,18 @@
  height: 0%;
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 772px) {
+  .dep{
+    padding-right: 0vw;
+  }
+
   .departements {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 61px;
     font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin: 0vw 3vw;
   }
 }
 
@@ -52,14 +59,12 @@
 }
 
 .jekers {
-  padding: 0px;
+  margin: 0.5vh;
   width: calc((100vw - 96px) / 4);
   height: calc((100vw - 96px) / 4);
-  background: var(--light);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 1vh solid var(--light);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -134,8 +139,8 @@
 
 @media screen and (max-width: 860px) {
   .jekers {
-    width: calc(100vw / 4);
-    height: calc(100vw / 4);
+    width: calc((100vw - 96px) / 3);
+    height: calc((100vw - 96px) / 3);
   }
   .c-jekers {
     margin-bottom: 0;
@@ -144,22 +149,19 @@
 
 @media screen and (max-width: 475px) {
   .jekers {
-    width: calc(100vw / 3);
-    height: calc(100vw / 3);
+    width: calc((100vw - 50px) / 3);
+    height: calc((100vw - 50px) / 3);
   }
+
   .c-jekers {
-    margin-bottom: 0;
     padding-left: 0rem;
     padding-right: 0rem;
   }
-  .dep{
-    padding-right: 0vw;
-  }
+}
 
+@media screen and (max-width: 550px) {
   .departements{
-    display: flex;
-    justify-content: space-around;
-    margin-left: 0vw;
+    font-size: 16px;
   }
 }
 

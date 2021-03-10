@@ -15,6 +15,7 @@ function teamAll() {
     subtext.className = "s-text subtitle is-3 jekerTextALL jekerText";
     var teamPosition = teamContent.feed.entry[i].gsx$cargo.$t;
     var teamCourse = teamContent.feed.entry[i].gsx$curso.$t;
+    var teamDep = teamContent.feed.entry[i].gsx$department.$t;
     subtext.innerHTML = teamPosition+'<br />'+teamCourse;
 
     var jeker = document.createElement('div');
@@ -29,7 +30,31 @@ function teamAll() {
     document.querySelector('.c-jekers').appendChild(jeker);
     jeker.style.display="none";
 
-    if(teamPosition.localeCompare("CTO")==0 || teamPosition.localeCompare("Senior Designer")==0 || teamPosition.localeCompare("Junior Designer")==0 || teamPosition.localeCompare("Senior Developer")==0 || teamPosition.localeCompare("Junior Developer")==0){
+    if(teamDep.localeCompare("Direcao")==0){
+      var text = document.createElement('div');
+      text.className = 'jekerTextALL';
+
+      var text = document.createElement('div');
+      text.className = "s-title title is-3 jekerTextALL jekerText";
+      text.innerHTML = teamContent.feed.entry[i].gsx$nome.$t;
+
+      subtext = document.createElement('div');
+      subtext.className = "s-text subtitle is-3 jekerTextALL jekerText";
+      subtext.innerHTML = teamPosition+'<br />'+teamCourse;
+
+      var jeker = document.createElement('div');
+      jeker.className = 'dirJekers jekers';
+
+      jeker.appendChild(text);
+      jeker.appendChild(subtext);
+
+      jeker.style.backgroundImage = "url('" + teamImage + "')";
+
+      document.querySelector('.c-jekers').appendChild(jeker);
+      jeker.style.display="none";
+    }
+
+    if(teamDep.localeCompare("Tech")==0){
       var text = document.createElement('div');
       text.className = 'jekerTextTECH';
 
@@ -53,7 +78,7 @@ function teamAll() {
       jeker.style.display="none";
     }
 
-    if(teamPosition.localeCompare("CEO & CIO")==0 || teamPosition.localeCompare("Senior Innovation Consultant & Communication Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant & International Manager")==0 || teamPosition.localeCompare("Senior Innovation Consultant")==0 || teamPosition.localeCompare("Junior Innovation Consultant")==0){
+    if(teamDep.localeCompare("Inovacao")==0){
       var text = document.createElement('div');
       text.className = 'jekerTextINNOVATION';
 
@@ -77,7 +102,7 @@ function teamAll() {
       jeker.style.display="none";
     }
 
-    if(teamPosition.localeCompare("COO")==0 || teamPosition.localeCompare("Treasurer")==0 || teamPosition.localeCompare("Senior HR Manager")==0 || teamPosition.localeCompare("Junior HR Manager")==0 || teamPosition.localeCompare("Junior QM Manager")==0 || teamPosition.localeCompare("Junior HR & QM Manager")==0){
+    if(teamDep.localeCompare("Interno")==0){
       var text = document.createElement('div');
       text.className = 'jekerTextINTERN';
 
