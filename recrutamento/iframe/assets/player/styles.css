@@ -1,13 +1,12 @@
 * {
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 
 /* Body */
 
-body
-{
+body {
     overflow: hidden;
     margin: 0;
     -webkit-user-select: none;
@@ -15,36 +14,31 @@ body
     -ms-user-select: none;
 }
 
-@media screen and (max-device-width: 1025px)
-{
-    body
-    {
+@media screen and (max-device-width: 1025px) {
+    body {
         background-color: black;
     }
 }
 
 /* Debug Status Display */
-   
-div#statisticsDisplay
-{
-    position: absolute; 
-    color : white;
+
+div#statisticsDisplay {
+    position: absolute;
+    color: white;
     background-color: grey;
     visibility: hidden;
 }
 
 /* Stage */
 
-div#stageArea
-{
-    position: absolute; 
+div#stageArea {
+    position: absolute;
     visibility: hidden;
     overflow: hidden;
 }
 
-div.stage
-{
-    position: absolute; 
+div.stage {
+    position: absolute;
     top: 0;
     left: 0;
     overflow: visible;
@@ -52,14 +46,12 @@ div.stage
 
 /* Hyperlinke Plane */
 
-div#hyperlinkPlane
-{
+div#hyperlinkPlane {
     visibility: hidden;
     pointer-events: none;
 }
 
-div.hyperlink
-{
+div.hyperlink {
     position: absolute;
     cursor: pointer;
 }
@@ -67,15 +59,15 @@ div.hyperlink
 /* Navigator */
 
 div#slideshowNavigator {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -moz-tap-highlight-color: rgba(0,0,0,0);
-    -ms-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+    -ms-tap-highlight-color: rgba(0, 0, 0, 0);
     position: absolute;
     overflow: hidden;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     color: 232323;
     top: 0px;
     left: 0px;
@@ -91,7 +83,7 @@ div.navigatorLeftSidebar {
     left: 0px;
     bottom: 0px;
     width: 30px;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 div.navigatorThumbnailSidebar {
@@ -127,7 +119,7 @@ div.navigatorThumbnailScroller::-webkit-scrollbar {
 }
 
 div.navigatorThumbnailScroller::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.4);
+    background: rgba(255, 255, 255, 0.4);
     -webkit-border-radius: 10px;
 }
 
@@ -137,7 +129,7 @@ div.navigatorThumbnailSelection {
     border-left-style: none;
     border-right-style: none;
     display: none;
-    background-color: rgba(125,125,125,0.5);
+    background-color: rgba(125, 125, 125, 0.5);
     top: 0px;
     width: 100%;
     height: 76px;
@@ -163,12 +155,12 @@ div.navigatorThumbnailItem {
 div.navigatorThumbnailItemCanvasContainer {
     position: absolute;
     max-height: 90px;
-    border: 1px solid rgba(255,255,255,0.68);
-    -webkit-box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-    -ms-box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.68);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    -ms-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
     background-color: #444;
-    width: 88px;    
+    width: 88px;
     height: 66px;
 }
 
@@ -179,9 +171,9 @@ div#slideNumberControl {
     overflow: hidden;
     display: none;
     opacity: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 120px;
     height: 110px;
@@ -194,21 +186,21 @@ div#slideNumberControl {
 
 div.slideNumberLabel {
     position: relative;
-    margin-left:16px;
-    margin-right:16px;
+    margin-left: 16px;
+    margin-right: 16px;
     margin-top: 16px;
     width: 88px;
-    height:33px;
+    height: 33px;
     font-weight: bold;
 }
 
 div.slideNumberDigit {
     position: relative;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:40px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
     width: 88px;
-    height:39px;
+    height: 39px;
 }
 
 /* Slide Number Display */
@@ -218,9 +210,9 @@ div#slideNumberDisplay {
     overflow: hidden;
     display: none;
     opacity: 0;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     width: 100px;
     height: 100px;
@@ -233,12 +225,12 @@ div#slideNumberDisplay {
 
 div.slideNumberDisplayDigit {
     position: relative;
-    margin-top:24px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:40px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 40px;
     width: 88px;
-    height:39px;
+    height: 39px;
 }
 
 /* Help Placard Display */
@@ -250,7 +242,7 @@ div#helpPlacard {
     opacity: 0;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
-    background-color: rgba(20,20,20,0.95);
+    background-color: rgba(20, 20, 20, 0.95);
     color: white;
     width: 822px;
     height: 633px;
@@ -259,7 +251,7 @@ div#helpPlacard {
     -webkit-border-radius: 12px 12px 12px 12px;
     -moz-border-radius: 12px 12px 12px 12px;
     -ms-border-radius: 12px 12px 12px 12px;
-    line-height:40px;
+    line-height: 40px;
     box-shadow: 0px 0px 40px black;
     -webkit-box-shadow: 0px 0px 40px black;
     -moz-box-shadow: 0px 0px 40px black;
@@ -268,7 +260,7 @@ div#helpPlacard {
 div.helpPlacardTitleBar {
     /*position:absolute;*/
     font-size: 22px;
-    color: rgba(120,120,120,1);    
+    color: rgba(120, 120, 120, 1);
     font-family: Helvetica, Arial, sans-serif;
     width: 822px;
     height: 40px;
@@ -280,28 +272,28 @@ div.helpPlacardTitleBar {
 }
 
 div.helpPlacardTitle {
-    padding-top:4px;
-    height:40px;
+    padding-top: 4px;
+    height: 40px;
 }
 
 div.helpPlacardCloseButton {
-    cursor:default;
-    top:10px;
-    left:10px;    
-    position:absolute;
-    background:url('close_n@2x.png') no-repeat 0 0;
+    cursor: default;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background: url("close_n@2x.png") no-repeat 0 0;
     background-size: 21px 21px;
-    width:21px;
-    height:21px;
+    width: 21px;
+    height: 21px;
 }
 
 div.helpPlacardCloseButton:hover {
-    background:url('close_hi@2x.png') no-repeat 0 0;
+    background: url("close_hi@2x.png") no-repeat 0 0;
     background-size: 21px 21px;
 }
 
 div.helpPlacardCloseButton:active {
-    background:url('close_p@2x.png') no-repeat 0 0;
+    background: url("close_p@2x.png") no-repeat 0 0;
     background-size: 21px 21px;
 }
 
@@ -311,52 +303,52 @@ div.helpPlacardContentPanel {
 }
 
 div.helpPlacardHeader {
-    color: rgba(255,255,255,1);    
+    color: rgba(255, 255, 255, 1);
     font-weight: bold;
-    width:822px;
-    height:40px;
+    width: 822px;
+    height: 40px;
     border-bottom: 1px white solid;
 }
 
 div.helpPlacardHeader {
-    color: rgba(255,255,255,1);    
+    color: rgba(255, 255, 255, 1);
     font-weight: bold;
-    width:822px;
-    height:40px;
+    width: 822px;
+    height: 40px;
     border-bottom: 1px black solid;
 }
 
 div.helpPlacardItem {
-    width:822px;
-    height:40px;
+    width: 822px;
+    height: 40px;
     border-bottom: 1px black solid;
 }
 
 div.helpPlacardLeftHeaderItem {
     /*position:absolute;*/
-    color: white;    
-    text-align:right;
-    float:left;
-    width:400px;
+    color: white;
+    text-align: right;
+    float: left;
+    width: 400px;
 }
 
 div.helpPlacardLeftItem {
-    color: rgba(120,120,120,1);    
-    text-align:right;
-    float:left;
-    width:400px;
+    color: rgba(120, 120, 120, 1);
+    text-align: right;
+    float: left;
+    width: 400px;
     border-right: 1px black solid;
 }
 
 div.helpPlacardRightItem {
-    text-align:left;
-    float:right;
-    width:400px;
+    text-align: left;
+    float: right;
+    width: 400px;
 }
 
 div.helpPlacardFooter {
     font-size: 14px;
-    color: rgba(120,120,120,1);
+    color: rgba(120, 120, 120, 1);
     font-family: Helvetica, Arial, sans-serif;
     width: 822px;
     height: 54px;
@@ -370,8 +362,9 @@ div.helpPlacardAcknowledgementsButton {
     line-height: 28px;
     padding-left: 11px;
     padding-right: 11px;
-    position:absolute;
-    background:url('kn-cloud_pd_help_btn-N@2x.png') no-repeat center center fixed;
+    position: absolute;
+    background: url("kn-cloud_pd_help_btn-N@2x.png") no-repeat center center
+        fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -381,14 +374,16 @@ div.helpPlacardAcknowledgementsButton {
 }
 
 div.helpPlacardAcknowledgementsButton:hover {
-    background:url('kn-cloud_pd_help_btn-H@2x.png') no-repeat center center fixed;
+    background: url("kn-cloud_pd_help_btn-H@2x.png") no-repeat center center
+        fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
 }
 
 div.helpPlacardAcknowledgementsButton:active {
-    background:url('kn-cloud_pd_help_btn-P@2x.png') no-repeat center center fixed;
+    background: url("kn-cloud_pd_help_btn-P@2x.png") no-repeat center center
+        fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -398,28 +393,28 @@ div.helpPlacardAcknowledgementsButton:active {
 
 @-webkit-keyframes spinnerAnimationRotate {
     0% {
-        -webkit-transform: rotate(  0deg);
+        -webkit-transform: rotate(0deg);
     }
     8.332% {
-        -webkit-transform: rotate(  0deg);
+        -webkit-transform: rotate(0deg);
     }
     8.333% {
-        -webkit-transform: rotate( 30deg);
+        -webkit-transform: rotate(30deg);
     }
     16.666% {
-        -webkit-transform: rotate( 30deg);
+        -webkit-transform: rotate(30deg);
     }
     16.667% {
-        -webkit-transform: rotate( 60deg);
+        -webkit-transform: rotate(60deg);
     }
     24.999% {
-        -webkit-transform: rotate( 60deg);
+        -webkit-transform: rotate(60deg);
     }
     25% {
-        -webkit-transform: rotate( 90deg);
+        -webkit-transform: rotate(90deg);
     }
     33.333% {
-        -webkit-transform: rotate( 90deg);
+        -webkit-transform: rotate(90deg);
     }
     33.334% {
         -webkit-transform: rotate(120deg);
@@ -476,28 +471,28 @@ div.helpPlacardAcknowledgementsButton:active {
 
 @-moz-keyframes spinnerAnimationRotate {
     0% {
-        -moz-transform: rotate(  0deg);
+        -moz-transform: rotate(0deg);
     }
     8.332% {
-        -moz-transform: rotate(  0deg);
+        -moz-transform: rotate(0deg);
     }
     8.333% {
-        -moz-transform: rotate( 30deg);
+        -moz-transform: rotate(30deg);
     }
     16.666% {
-        -moz-transform: rotate( 30deg);
+        -moz-transform: rotate(30deg);
     }
     16.667% {
-        -moz-transform: rotate( 60deg);
+        -moz-transform: rotate(60deg);
     }
     24.999% {
-        -moz-transform: rotate( 60deg);
+        -moz-transform: rotate(60deg);
     }
     25% {
-        -moz-transform: rotate( 90deg);
+        -moz-transform: rotate(90deg);
     }
     33.333% {
-        -moz-transform: rotate( 90deg);
+        -moz-transform: rotate(90deg);
     }
     33.334% {
         -moz-transform: rotate(120deg);
@@ -554,28 +549,28 @@ div.helpPlacardAcknowledgementsButton:active {
 
 @-ms-keyframes spinnerAnimationRotate {
     0% {
-        -ms-transform: rotate(  0deg);
+        -ms-transform: rotate(0deg);
     }
     8.332% {
-        -ms-transform: rotate(  0deg);
+        -ms-transform: rotate(0deg);
     }
     8.333% {
-        -ms-transform: rotate( 30deg);
+        -ms-transform: rotate(30deg);
     }
     16.666% {
-        -ms-transform: rotate( 30deg);
+        -ms-transform: rotate(30deg);
     }
     16.667% {
-        -ms-transform: rotate( 60deg);
+        -ms-transform: rotate(60deg);
     }
     24.999% {
-        -ms-transform: rotate( 60deg);
+        -ms-transform: rotate(60deg);
     }
     25% {
-        -ms-transform: rotate( 90deg);
+        -ms-transform: rotate(90deg);
     }
     33.333% {
-        -ms-transform: rotate( 90deg);
+        -ms-transform: rotate(90deg);
     }
     33.334% {
         -ms-transform: rotate(120deg);
@@ -630,25 +625,23 @@ div.helpPlacardAcknowledgementsButton:active {
     }
 }
 
-div#waitingIndicator
-{
+div#waitingIndicator {
     position: absolute;
     display: none;
     visibility: visible;
     width: 110px;
     height: 110px;
-    background-image: url('waiting_bezel.png');
+    background-image: url("waiting_bezel.png");
 }
 
-div#waitingSpinner
-{
-    position: absolute; 
+div#waitingSpinner {
+    position: absolute;
     visibility: visible;
     top: 27px;
     left: 33px;
     width: 42px;
     height: 42px;
-    background: transparent url('spinner.png') no-repeat 0 0;
+    background: transparent url("spinner.png") no-repeat 0 0;
     opacity: 0.75;
     -webkit-animation: spinnerAnimationRotate 1s linear infinite;
     -moz-animation: spinnerAnimationRotate 1s linear infinite;
