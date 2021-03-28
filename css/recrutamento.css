@@ -6,7 +6,9 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 41.4%; /* 3:2 Aspect Ratio */
+    padding-top: 40.2%; /* 3:2 Aspect Ratio */
+    margin-top: 16px;
+    margin-right: 68px;
 }
 
 /* Then style the iframe to fit in the container div with full height and width */
