@@ -637,7 +637,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  /*color: #fff;*/
+  color: #000;
   padding: 0 15px;
   margin-top: 10px;
   margin-bottom: 10px;
