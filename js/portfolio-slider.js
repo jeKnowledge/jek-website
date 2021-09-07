@@ -1,29 +1,32 @@
 function sliderContentLoader() {
   portfolioContent = window.portfolioContent;
 
-  var projectNumber = portfolioContent.feed.entry.length;
+  var projectNumber = portfolioContent.length;
 
-  for(var i=projectNumber - 1; i>projectNumber - 5; i--) {
-    var container = document.createElement('div');
-    container.className = 'c-project-slide-block c-my-flooper__el js-flooper-item';
+  for (var i = projectNumber - 1; i > projectNumber - 5; i--) {
+    let portfolioIndex = portfolioContent[i].c;
 
-    var text = document.createElement('div');
-    text.className = 'text';
+    var container = document.createElement("div");
+    container.className =
+      "c-project-slide-block c-my-flooper__el js-flooper-item";
 
-    var title = document.createElement('h3');
-    title.className = 's-title title is-3 hightlight';
-    title.innerHTML = portfolioContent.feed.entry[i].gsx$titles.$t;
+    var text = document.createElement("div");
+    text.className = "text";
 
-    var br = document.createElement('br');
+    var title = document.createElement("h3");
+    title.className = "s-title title is-3 hightlight";
+    title.innerHTML = portfolioIndex[0].v;
 
-    var subtitle = document.createElement('h4');
-    subtitle.className = 's-text subtitle is-3 hightlight';
-    subtitle.innerHTML = portfolioContent.feed.entry[i].gsx$shortsubtitles.$t;
+    var br = document.createElement("br");
 
-    var content = document.createElement('a');
+    var subtitle = document.createElement("h4");
+    subtitle.className = "s-text subtitle is-3 hightlight";
+    subtitle.innerHTML = portfolioIndex[1].v;
+
+    var content = document.createElement("a");
     content.href = "views/project/?num=" + i;
-    content.className = 'content';
-    content.style.backgroundImage = "url('" + portfolioContent.feed.entry[i].gsx$image.$t + "')";
+    content.className = "content";
+    content.style.backgroundImage = "url('" + portfolioIndex[2].v + "')";
 
     container.appendChild(text);
     text.appendChild(title);
@@ -34,7 +37,7 @@ function sliderContentLoader() {
     document.getElementById("portfolio-slider").appendChild(container);
   }
 
-  let myFlooper = new flooper('.c-project-slide', {
+  let myFlooper = new flooper(".c-project-slide", {
     speed: 0.5,
   });
   myFlooper.init();
