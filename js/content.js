@@ -83,12 +83,12 @@ function homeContentObject() {
   document.querySelector("#jekWhoTitle").innerHTML = jekWhoTitle;
   document.querySelector("#jekWhoText").innerHTML = jekWhoText;
 
-  //jeKer
-  var jeKerTitle = textObject[defineLang + 3].c[0].v;
-  var jeKerSubtitle = textObject[defineLang + 3].c[1].v;
+  //jeKer do mes
+  // var jeKerTitle = textObject[defineLang + 3].c[0].v;
+  // var jeKerSubtitle = textObject[defineLang + 3].c[1].v;
 
-  document.querySelector("#jeKerTitle").innerHTML = jeKerTitle;
-  document.querySelector("#jeKerSubtitle").innerHTML = jeKerSubtitle;
+  // document.querySelector("#jeKerTitle").innerHTML = jeKerTitle;
+  // document.querySelector("#jeKerSubtitle").innerHTML = jeKerSubtitle;
 
   //World
   var jekWorldTitle = textObject[defineLang + 5].c[0].v;
