@@ -40,7 +40,7 @@
         <nav>
           <h1 class="b-title">Home</h1>
           <br>
-          <h1 class="b-title">Portfolio</h1>
+          <h1 class="b-title">Our Work</h1>
           <br>
           <h1 class="b-title">Recruit</h1>
           <br>
@@ -62,7 +62,7 @@
             <br>
             This website is
             <br>
-            © jeKnowledge 2018.
+            © jeKnowledge 2021.
           </div>
         </div>
       </section>
@@ -137,7 +137,6 @@
       </div>
     </section>
 
-    
     <!-- jeker do mes -->
 
     <!-- <section class="c-jeker c-section invert" id="c-jeker">
@@ -154,7 +153,6 @@
         <h4 class="jeker-name s-title title is-3 hightlight regular" id="jekerName"> </h3>
       </div>
     </section> -->
-
     <section class="c-jeker c-section">
       <div class="jeker-text">
         <h1 class="b-title title" id="workTitle"></h1>
@@ -242,6 +240,7 @@
             <blockquote class="p-testimonial b-text sized-text">
               A jeKnowledge foi o playground perfeito para crescer com a melhor companhia de sempre. Viva a jenubal!
             </blockquote>
+
             <h3 class="s-title title is-3 hightlight">David Gomes</h3>
             <br>
             <h4 class="s-text subtitle is-3 hightlight" id="videosSubtitle">CTO (2015/2016)</h4>
@@ -287,7 +286,7 @@
         <div class="text s-text">
           geral@jeknowledge.com
           <br>
-          +351 926 590 223
+          +351 919 818 111
           <br>
           This website is
           <br>
@@ -304,5 +303,12 @@
     <script src="js/portfolio-slider.js"></script>
     <script src="js/jek-world.js"></script>
     <script src="js/partners.js"></script>
+    <script>
+      function cb(response) {
+          console.log(response.value);
+          document.getElementById('visits').innerText = response.value;
+      }
+      </script>
+      <script async src="https://api.countapi.xyz/hit/jeknowledge.pt/visits?callback=cb"></script>
   </body>
 </html>
