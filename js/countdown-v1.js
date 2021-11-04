@@ -1,3 +1,4 @@
+
 var countDownDate = new Date("Oct 23, 2021 23:59:00").getTime();
 var countDownfunction = setInterval(function () {
   var now = new Date().getTime();
@@ -22,3 +23,4 @@ var countDownfunction = setInterval(function () {
     document.getElementById()("demo").innerHTML = "Happy days";
   }
 }, 1000);
+
