@@ -514,7 +514,7 @@ nav h1 {
   background: var(--dark-blue);
   background-size: cover;
   background-position: center;
-  max-height: 650px;
+  max-height: 740px;
 }
 @media screen and (max-width: 1190px) {
   .jeker-content {
@@ -583,7 +583,7 @@ a.jeker-name:hover {
 }
 
 .team-image {
-  background-image: url("https://i.imgur.com/2zGb1Pr.jpg");
+  background-image: url("https://i.imgur.com/EKGX7td.jpg");
 }
 .work-image {
   background-image: url("../brand/resources/images/limeconf.jpg");
