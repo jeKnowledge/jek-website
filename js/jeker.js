@@ -35,6 +35,7 @@ function jekerObject() {
   }
 
   //jeK Who
+  console.log(textObject);
   var jekerName = textObject[0].v;
   var jekerImage = textObject[1].v;
   var jekerDesc = textObject[2].v;
