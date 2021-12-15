@@ -511,8 +511,6 @@ nav h1 {
   margin-top: 48px;
 }
 .jeker-content {
-  background: var(--dark-blue);
-  background-size: cover;
   background-position: center;
   max-height: 740px;
 }
@@ -584,6 +582,8 @@ a.jeker-name:hover {
 
 .team-image {
   background-image: url("https://i.imgur.com/EKGX7td.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .work-image {
   background-image: url("../brand/resources/images/limeconf.jpg");
