@@ -1,19 +1,19 @@
 function getQueryVariable(variable) {
-  var query = window.location.search.substring(1);
-  var vars = query.split("&");
-  for (var i=0;i<vars.length;i++) {
-  var pair = vars[i].split("=");
-    if(pair[0] == variable) {
-      return pair[1];
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) {
+            return pair[1];
+        }
     }
-  }
-  return(false);
+    return (false);
 }
 
-if ( /^((?!chrome|android).)*safari/i.test(navigator.userAgent)){
-  document.querySelector('.c-hero-ov-3').classList.add("safari");
-  document.querySelector('.c-hero-ov-4').classList.add("safari");
-  document.querySelector('.c-hero-ov-action').classList.add("safari");
+if (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+    document.querySelector('.c-hero-ov-3').classList.add("safari");
+    document.querySelector('.c-hero-ov-4').classList.add("safari");
+    document.querySelector('.c-hero-ov-action').classList.add("safari");
 }
 
 var navLinks = document.querySelectorAll("nav h1");
@@ -21,21 +21,21 @@ var navLinks = document.querySelectorAll("nav h1");
 var currentAddress = window.location.origin;
 
 navLinks[0].addEventListener('click', function() {
-  window.location = currentAddress + "/";
+    window.location = currentAddress + "/";
 }, false);
 navLinks[1].addEventListener('click', function() {
-  window.location = currentAddress + "/views/portfolio/";
+    window.location = "https://jekfolio.jeknowledge.com/";
 }, false);
 navLinks[2].addEventListener('click', function() {
-  window.location = currentAddress + "/recrutamento/";
+    window.location = currentAddress + "/recrutamento/";
 }, false);
 navLinks[3].addEventListener('click', function() {
-  window.location = "https://medium.com/jeknowledge";
+    window.location = "https://medium.com/jeknowledge";
 }, false);
 navLinks[4].addEventListener('click', function() {
-  window.location = currentAddress + "/views/team/";
+    window.location = currentAddress + "/views/team/";
 }, false);
 
 document.querySelector('#action-text').addEventListener('click', function() {
-  window.location = "/";
+    window.location = "/";
 }, false);
