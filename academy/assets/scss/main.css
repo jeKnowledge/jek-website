@@ -755,7 +755,7 @@ footer {
   top: 0px;
 }
 .top-nav-collapse .navbar-nav .nav-link {
-  color: #212121 !important;
+  color: #000000 !important;
 }
 .top-nav-collapse .navbar-nav .nav-link:hover {
   color: #7CCCED !important;
@@ -770,7 +770,8 @@ footer {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  color: #3E3C39 !important;
+  font-weight: bolder;
   padding: 0 15px;
   margin-top: 10px;
   margin-bottom: 10px;
