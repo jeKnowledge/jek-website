@@ -116,7 +116,7 @@ ol li {
 }
 
 .section-title-header p {
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
@@ -164,7 +164,7 @@ ol li {
 }
 
 .section-note-header p {
-  text: center;
+  text-align: center;
   font-weight: 250;
   line-height: 26px;
   padding-bottom: 36px;
@@ -213,7 +213,7 @@ ol li {
 
 .section-subcontent {
   font-size: 16px;
-  text: center;
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   padding-bottom: 36px;
