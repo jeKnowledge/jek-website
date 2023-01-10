@@ -1,5 +1,5 @@
-
-var countDownDate = new Date("Mar 25, 2022 23:59:00").getTime();
+var countDownDate = new Date("2022-10-10T23:59:59Z").getTime();
+//var countDownDate = 1665442799;
 var countDownfunction = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -20,7 +20,7 @@ var countDownfunction = setInterval(function () {
   }
   if (distance < 0) {
     clearInterval(countDownfunction);
-    document.getElementById()("demo").innerHTML = "Happy days";
+    document.getElementById("demo").innerHTML = "Happy days";
   }
 }, 1000);
 
